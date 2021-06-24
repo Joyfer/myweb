@@ -2,7 +2,7 @@
   <main>
     <section>
       <v-row class="full-height align-center justify-center">
-        <v-col class="d-flex flex-column" cols="12" sm="5">
+        <v-col class="d-flex flex-column align-center" cols="12" sm="5">
           <TitleAndText
             title="Bienvenido"
             bodyText="Me llamo Joyfer y me dedico a hacer páginas y aplicaciones web, en este
@@ -93,8 +93,8 @@
 
 <script>
 import TitleAndText from "../components/resources/text/TitleAndText";
-import PrimaryButton from "../components/resources/buttons/PrimaryButton";
 import CardsTools from "../components/resources/text/CardsTools";
+import PrimaryButton from "../components/resources/buttons/PrimaryButton";
 
 import { mdiAccountOutline, mdiFolderHeart, mdiArrowDownBold } from "@mdi/js";
 export default {
@@ -115,9 +115,6 @@ export default {
 </script>
 
 <style scoped>
-.full-height {
-  height: 95vh;
-}
 .object {
   -webkit-animation: MoveUpDown 1s linear infinite;
   animation: MoveUpDown 1s linear infinite;

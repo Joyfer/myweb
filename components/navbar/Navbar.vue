@@ -25,7 +25,7 @@ export default {
   name: "Navbar",
   components: {
     PrimaryButton,
-    ContactsButtons
+    ContactsButtons,
   },
   data() {
     return {
@@ -46,6 +46,11 @@ export default {
     },
     currentSection(sectionName) {
       if (this.$route.fullPath === "/" && sectionName === "Sobre mí") {
+        return "section__current-section";
+      } else if (
+        this.$route.fullPath === "/about" &&
+        sectionName === "Acerca"
+      ) {
         return "section__current-section";
       } else {
         return "";

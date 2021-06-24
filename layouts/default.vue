@@ -27,6 +27,9 @@ export default {
 </script>
 
 <style>
+.full-height {
+  height: 95vh;
+}
 .text__title-purple {
   font-family: "Fredoka One", cursive !important;
 }
