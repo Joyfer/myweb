@@ -29,7 +29,7 @@
         </v-col>
       </v-row>
     </section>
-    <section>
+    <section class="mb-15">
       <v-row class="align-center justify-center">
         <v-col cols="12">
           <v-img
@@ -49,12 +49,39 @@
         </v-col>
       </v-row>
     </section>
+    <section class="my-15">
+      <v-row class="align-center justify-center">
+        <CardsTools />
+      </v-row>
+    </section>
+    <section class="mt-15">
+      <v-row class="align-center justify-center">
+        <v-col cols="12">
+          <v-img
+            class="mx-auto mt-15"
+            max-height="320"
+            max-width="570"
+            src="/svg/undraw_quick_chat_re_bit5.svg"
+        /></v-col>
+        <v-col class="text-center" cols="7">
+          <TitleAndText
+            title="Contáctame"
+            bodyText="Si quieres comunicarte conmigo, puedes hacerlo a través de 
+            <a href='https://t.me/JoyferR' target='_blank'>Telegram</a> , 
+            correo electrónico 
+            <a href='https://mail.google.com/mail/?view=cm&fs=1&to=joyferramos@gmail.com' target='_blank'>joyferramos@gmail.com</a> o 
+            <a href='https://discord.com/app' target='_blank'>Discord</a> id: #6528"
+          />
+        </v-col>
+      </v-row>
+    </section>
   </main>
 </template> 
 
 <script>
 import TitleAndText from "../components/text/TitleAndText";
 import PrimaryButton from "../components/resources/buttons/PrimaryButton";
+import CardsTools from "../components/text/CardsTools";
 
 import { mdiAccountOutline, mdiFolderHeart, mdiArrowDownBold } from "@mdi/js";
 export default {
@@ -62,6 +89,7 @@ export default {
   components: {
     TitleAndText,
     PrimaryButton,
+    CardsTools,
   },
   data() {
     return {
