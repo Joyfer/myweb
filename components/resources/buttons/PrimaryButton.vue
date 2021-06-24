@@ -1,5 +1,5 @@
 <template>
-  <v-btn color="primary" :outlined="outlined" class="">
+  <v-btn color="primary" :outlined="outlined" :text="textButton" class="">
     {{ text }}
     <v-icon v-if="icon" right> {{ icon }} </v-icon>
   </v-btn>
@@ -18,6 +18,11 @@ export default {
       required: false,
     },
     outlined: {
+      type: Boolean,
+      required: false,
+      default: false,
+    },
+    textButton: {
       type: Boolean,
       required: false,
       default: false,

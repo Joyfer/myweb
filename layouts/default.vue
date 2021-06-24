@@ -1,6 +1,11 @@
 <template>
   <v-app light>
     <v-main>
+      <div>
+        <v-app-bar elevation="0" color="transparent">
+          <Navbar />
+        </v-app-bar>
+      </div>
       <v-container>
         <nuxt />
       </v-container>
@@ -9,8 +14,12 @@
 </template>
 
 <script>
+import Navbar from "../components/navbar/Navbar";
 export default {
   name: "layout",
+  components: {
+    Navbar,
+  },
 };
 </script>
 
