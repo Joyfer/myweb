@@ -11,35 +11,21 @@
     >
     </PrimaryButton>
     <v-spacer></v-spacer>
-    <v-btn
-      v-for="({ icon, link }, index) in contacts"
-      :key="index + 100"
-      icon
-      color="primary"
-      :href="link"
-      target="_blank"
-    >
-      <v-icon dark> {{ icon }} </v-icon></v-btn
-    >
+    <ContactsButtons />
   </v-app-bar>
 </template>
 
 <script>
 import PrimaryButton from "../resources/buttons/PrimaryButton";
+import ContactsButtons from "../resources/buttons/Contacts";
 
-import {
-  mdiAccount,
-  mdiFolderHeart,
-  mdiCommentQuestion,
-  mdiTelegram,
-  mdiWeb,
-  mdiGmail,
-} from "@mdi/js";
+import { mdiAccount, mdiFolderHeart, mdiCommentQuestion } from "@mdi/js";
 
 export default {
   name: "Navbar",
   components: {
     PrimaryButton,
+    ContactsButtons
   },
   data() {
     return {
@@ -47,11 +33,6 @@ export default {
         { icon: mdiAccount, sectionName: "Sobre mí" },
         { icon: mdiFolderHeart, sectionName: "Colección" },
         { icon: mdiCommentQuestion, sectionName: "Acerca" },
-      ],
-      contacts: [
-        { icon: mdiTelegram, link: "https://getbootstrap.com/" },
-        { icon: mdiWeb, link: "https://getbootstrap.com/" },
-        { icon: mdiGmail, link: "https://getbootstrap.com/" },
       ],
     };
   },

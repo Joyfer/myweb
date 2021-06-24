@@ -2,7 +2,7 @@
   <main>
     <section>
       <v-row class="full-height align-center justify-center">
-        <v-col class="d-flex flex-column" cols="5">
+        <v-col class="d-flex flex-column" cols="12" sm="5">
           <TitleAndText
             title="Bienvenido"
             bodyText="Me llamo Joyfer y me dedico a hacer páginas y aplicaciones web, en este
@@ -15,12 +15,23 @@
               text="Ver perfil"
               :icon="AccountIcon"
               :outlined="true"
+              class="my-1 my-md-0"
             />
-            <PrimaryButton text="Ver colección" :icon="FolderIcon" />
+            <PrimaryButton
+              text="Ver colección"
+              :icon="FolderIcon"
+              class="my-1 my-md-0"
+            />
           </div>
         </v-col>
-        <v-col cols="5">
-          <v-img src="/svg/undraw_building_websites_i78t.svg" />
+        <v-col cols="12" sm="5">
+          <v-img
+            max-height="400"
+            max-width="500"
+            class="mx-auto"
+            src="/svg/undraw_building_websites_i78t.svg"
+            lazy-src="/svg/undraw_building_websites_i78t.svg"
+          />
         </v-col>
         <v-col cols="12" class="d-flex justify-center">
           <v-icon class="object" color="primary" x-large>{{
@@ -29,7 +40,7 @@
         </v-col>
       </v-row>
     </section>
-    <section class="mb-15">
+    <section class="mt-15 mt-sm-4">
       <v-row class="align-center justify-center">
         <v-col cols="12">
           <v-img
@@ -37,8 +48,9 @@
             max-height="320"
             max-width="570"
             src="/svg/undraw_Profile_re_4a55.svg"
+            lazy-src="/svg/undraw_Profile_re_4a55.svg"
         /></v-col>
-        <v-col class="text-center" cols="7">
+        <v-col class="text-center" cols="12" sm="7">
           <TitleAndText
             title="¡Hola!"
             bodyText="Soy un programador web apasionado por todo lo relacionado 
@@ -49,7 +61,7 @@
         </v-col>
       </v-row>
     </section>
-    <section class="my-15">
+    <section class="mb-15">
       <v-row class="align-center justify-center">
         <CardsTools />
       </v-row>
@@ -62,8 +74,9 @@
             max-height="320"
             max-width="570"
             src="/svg/undraw_quick_chat_re_bit5.svg"
+            lazy-src="/svg/undraw_quick_chat_re_bit5.svg"
         /></v-col>
-        <v-col class="text-center" cols="7">
+        <v-col class="text-center" cols="12" sm="7">
           <TitleAndText
             title="Contáctame"
             bodyText="Si quieres comunicarte conmigo, puedes hacerlo a través de 
@@ -79,9 +92,9 @@
 </template> 
 
 <script>
-import TitleAndText from "../components/text/TitleAndText";
+import TitleAndText from "../components/resources/text/TitleAndText";
 import PrimaryButton from "../components/resources/buttons/PrimaryButton";
-import CardsTools from "../components/text/CardsTools";
+import CardsTools from "../components/resources/text/CardsTools";
 
 import { mdiAccountOutline, mdiFolderHeart, mdiArrowDownBold } from "@mdi/js";
 export default {

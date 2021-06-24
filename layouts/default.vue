@@ -2,23 +2,26 @@
   <v-app light>
     <v-main>
       <div>
-        <v-app-bar elevation="0" color="transparent">
-          <Navbar />
-        </v-app-bar>
+        <Navbar />
       </div>
       <v-container>
         <nuxt />
       </v-container>
+      <div class="mt-16">
+        <Footer />
+      </div>
     </v-main>
   </v-app>
 </template>
 
 <script>
 import Navbar from "../components/navbar/Navbar";
+import Footer from "../components/navbar/Footer";
 export default {
   name: "layout",
   components: {
     Navbar,
+    Footer
   },
 };
 </script>
