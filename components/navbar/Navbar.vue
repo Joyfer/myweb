@@ -1,15 +1,19 @@
 <template>
   <v-app-bar elevation="0" color="transparent">
     <!-- <v-app-bar-nav-icon></v-app-bar-nav-icon> -->
-    <PrimaryButton
-      v-for="({ sectionName, icon }, index) in sections"
+    <NuxtLink
+      v-for="({ sectionName, icon, link }, index) in sections"
+      :to="`/${link}`"
       :key="index"
-      :text="sectionName"
-      :textButton="true"
-      :icon="icon"
-      :class="`${indexMargin(index)} ${currentSection(sectionName)}`"
     >
-    </PrimaryButton>
+      <PrimaryButton
+        :text="sectionName"
+        :textButton="true"
+        :icon="icon"
+        :class="`${indexMargin(index)} ${currentSection(sectionName)}`"
+      >
+      </PrimaryButton>
+    </NuxtLink>
     <v-spacer></v-spacer>
     <ContactsButtons />
   </v-app-bar>
@@ -30,9 +34,9 @@ export default {
   data() {
     return {
       sections: [
-        { icon: mdiAccount, sectionName: "Sobre mí" },
-        { icon: mdiFolderHeart, sectionName: "Colección" },
-        { icon: mdiCommentQuestion, sectionName: "Acerca" },
+        { icon: mdiAccount, sectionName: "Sobre mí", link: "" },
+        { icon: mdiFolderHeart, sectionName: "Colección", link: "" },
+        { icon: mdiCommentQuestion, sectionName: "Acerca", link: "about" },
       ],
     };
   },

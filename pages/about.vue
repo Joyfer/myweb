@@ -15,7 +15,7 @@
           title="Acerca"
           bodyText="Construido en Vue 2 con Nuxt, utilizando el framework css Vuetify, ilustraciones
           provistas gratutitamente por <a href='https://undraw.co/' target='_blank'>https://undraw.co/</a>
-          iconos gratuitos por <a href='https://materialdesignicons.com/' target='_blank'>https://materialdesignicons.com/</a>
+          iconos gratuitos por <a href='https://materialdesignicons.com/' target='_blank'>https://materialdesignicons.com/.</a>
           Diseñado y maquetado por mi persona."
         />
       </v-col>

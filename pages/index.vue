@@ -2,7 +2,7 @@
   <main>
     <section>
       <v-row class="full-height align-center justify-center">
-        <v-col class="d-flex flex-column align-center" cols="12" sm="5">
+        <v-col class="d-flex flex-column align-center" cols="12" sm="6">
           <TitleAndText
             title="Bienvenido"
             bodyText="Me llamo Joyfer y me dedico a hacer páginas y aplicaciones web, en este
@@ -16,11 +16,13 @@
               :icon="AccountIcon"
               :outlined="true"
               class="my-1 my-md-0"
+              :large="true"
             />
             <PrimaryButton
               text="Ver colección"
               :icon="FolderIcon"
               class="my-1 my-md-0"
+              :large="true"
             />
           </div>
         </v-col>
