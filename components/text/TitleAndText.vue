@@ -1,10 +1,9 @@
 <template>
-  <div class="text-left">
-    <h2 class="text-h2 text__title-purple mb-3 primary--text">Bienvenido</h2>
-    <p class="text-body-1">
-      Me llamo Joyfer y me dedico a hacer páginas y aplicaciones web, en este
-      sitio encontrarás mi perfil y parte de mi trabajo. No dudes en contáctarte
-      conmigo si estás interesado.
+  <div>
+    <h2 v-if="header" class="text-h2 text__title-purple mb-3 primary--text">{{title}}</h2>
+    <h3 v-else class="text-h3 text__title-purple mb-6 primary--text">{{title}}</h3>
+    <p class="text-body-1 text-justify">
+        {{bodyText}}
     </p>
   </div>
 </template>
@@ -12,6 +11,21 @@
 <script>
 export default {
   name: "TitleAndText",
+  props: {
+    title: {
+      type: String,
+      required: true,
+    },
+    bodyText: {
+      type: String,
+      required: true,
+    },
+    header: {
+        type: Boolean,
+        required: false,
+        default: false
+    }
+  },
 };
 </script>
 
