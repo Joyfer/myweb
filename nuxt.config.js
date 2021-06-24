@@ -18,8 +18,19 @@ export default {
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
       {
+        rel: "preconnect", href: "https://fonts.googleapis.com"
+      },
+      {
+        rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin: 'true'
+      },
+      {
         href:
           "https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&amp;display=swap",
+        rel: "stylesheet"
+      },
+      {
+        href:
+          "https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap",
         rel: "stylesheet"
       }
     ]
@@ -53,8 +64,11 @@ export default {
     treeShake: true,
     defaultAssets: false,
     theme: {
-      dark: true,
+      dark: false,
       themes: {
+        light: {
+          primary: '#6b63ff',
+        },
         dark: {
           primary: colors.blue.darken2,
           accent: colors.grey.darken3,

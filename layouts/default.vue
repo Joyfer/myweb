@@ -10,9 +10,12 @@
 
 <script>
 export default {
-  name: 'layout'
+  name: "layout",
 };
 </script>
 
 <style>
+.text__title-purple {
+  font-family: "Fredoka One", cursive !important;
+}
 </style>
