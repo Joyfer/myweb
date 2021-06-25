@@ -14,11 +14,28 @@
           ><h3 class="text-h3" v-text="filtrado[0].name"></h3>
           <p class="text-body-2 my-5" v-text="filtrado[0].descripcion"></p>
           <div class="mb-5">
-            <v-btn class="mx-1" outlined color="primary" href="" target="_blank"
-              >¡Visitar!<v-icon right>mdi-web</v-icon></v-btn
-            >
-            <v-btn class="mx-1" color="primary" href="" target="_blank"
-              >Envíame un correo<v-icon right>mdi-gmail</v-icon></v-btn
+            <PrimaryButton
+              class="mx-1"
+              outlined
+              :href="filtrado[0].url"
+              text="¡Visitar!"
+              icon="mdi-web"
+              :header="true"
+            ></PrimaryButton>
+            <PrimaryButton
+              class="mx-1"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=joyferramos@gmail.com"
+              text="Envíame un correo"
+              icon="mdi-gmail"
+            ></PrimaryButton>
+            <v-btn
+              class="mx-1"
+              icon
+              :color="this.$vuetify.theme.dark === true ? 'white' : 'black'"
+              v-if="filtrado[0].gitRepo"
+              :href="filtrado[0].gitRepo"
+              target="_blank"
+              ><v-icon>mdi-github</v-icon></v-btn
             >
           </div>
           <Alert
@@ -37,6 +54,7 @@
 import Carousel from "../../components/colection/carousel/Carousel";
 import Alert from "../../components/resources/alert/Alert";
 import List from "../../components/colection/list/List";
+import PrimaryButton from "../../components/resources/buttons/PrimaryButton";
 
 import { mapState } from "vuex";
 export default {
@@ -45,6 +63,7 @@ export default {
     Carousel,
     Alert,
     List,
+    PrimaryButton,
   },
   computed: {
     ...mapState(["proyectos"]),
@@ -59,8 +78,8 @@ export default {
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
         {
           hid: "description",
-          name: "description",
-          content: "My custom description",
+          name: "keywords",
+          content: this.filtrado[0].name,
         },
       ],
       link: [

@@ -4,7 +4,7 @@
       v-for="({ icon, link }, index) in contacts"
       :key="index + 100"
       icon
-      :color="color"
+      :color="$vuetify.theme.dark === true ? 'white' : color"
       :href="link"
       target="_blank"
     >

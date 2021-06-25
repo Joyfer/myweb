@@ -17,6 +17,7 @@
               :outlined="true"
               class="my-1 my-md-0"
               @click.native="move"
+              :header="true"
             />
             <PrimaryButton
               text="Ver colección"

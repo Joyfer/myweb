@@ -75,7 +75,7 @@ export default {
     treeShake: true,
     defaultAssets: false,
     theme: {
-      dark: true,
+      dark: false,
       themes: {
         light: {
           primary: "#6b63ff"

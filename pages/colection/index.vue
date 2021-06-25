@@ -24,7 +24,7 @@
             <v-col
               v-for="{ id, name, imagenes } in proyectos"
               :key="id"
-              cols="6"
+              cols="12" sm="6" md="6"
             >
               <CardProject :title="name" :image="imagenes[0]" :id="id" />
             </v-col>

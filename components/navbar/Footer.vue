@@ -1,6 +1,6 @@
 <template>
   <v-footer padless>
-    <v-card flat tile width="100%" class="primary text-center">
+    <v-card flat tile width="100%" class="primary darken-1 text-center">
       <v-card-text>
         <ContactsButtons color="white" />
       </v-card-text>

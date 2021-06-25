@@ -1,12 +1,18 @@
 <template>
   <v-btn
-    color="primary"
+    :color="
+      $vuetify.theme.dark === true && header === true
+        ? 'white'
+        : 'primary'
+    "
     :outlined="outlined"
     :text="textButton"
     class=""
     :large="large"
     :nuxt="typeof nuxtLink === 'string' ? true : false"
     :to="nuxtLink"
+    :href="href"
+    :target="href ? '_blank' : undefined"
   >
     {{ text }}
     <v-icon v-if="icon" right> {{ icon }} </v-icon>
@@ -45,6 +51,21 @@ export default {
       required: false,
       default: undefined,
     },
+    color: {
+      type: String,
+      required: false,
+      default: "primary",
+    },
+    href: {
+      type: String,
+      required: false,
+      default: undefined
+    },
+    header: {
+      type: Boolean,
+      required: false,
+      default: false
+    }
   },
 };
 </script>

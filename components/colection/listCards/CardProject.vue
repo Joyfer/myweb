@@ -12,7 +12,7 @@
         :lazy-src="image"
         :src="image"
         class="white--text align-end"
-        gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.4)"
+        gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.1)"
         height="100%"
       >
         <v-expand-transition>
@@ -24,6 +24,7 @@
             <v-card-title v-text="title"></v-card-title>
           </div>
         </v-expand-transition>
+        <v-card-title class="d-block d-sm-none" v-text="title"></v-card-title>
       </v-img>
     </v-card>
   </v-hover>
