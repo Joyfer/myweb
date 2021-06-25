@@ -16,13 +16,11 @@
               :icon="AccountIcon"
               :outlined="true"
               class="my-1 my-md-0"
-              :large="true"
             />
             <PrimaryButton
               text="Ver colección"
               :icon="FolderIcon"
               class="my-1 my-md-0"
-              :large="true"
             />
           </div>
         </v-col>
@@ -65,6 +63,15 @@
     </section>
     <section class="mb-15">
       <v-row class="align-center justify-center">
+        <v-col cols="12" sm="7">
+          <p class="text-justify text-body-1">
+            Cada día práctico y aprendo diferentes herramientas para llegar a
+            ser un programador completo
+            <span class="text-h6 text__title-purple primary--text">
+              full-stack</span
+            >. Actualmente aprendo y programo en:
+          </p>
+        </v-col>
         <CardsTools />
       </v-row>
     </section>
@@ -82,7 +89,7 @@
           <TitleAndText
             title="Contáctame"
             bodyText="Si quieres comunicarte conmigo, puedes hacerlo a través de 
-            <a href='https://t.me/JoyferR' target='_blank'>Telegram</a> , 
+            <a href='https://t.me/JoyferR' target='_blank'>Telegram</a>, 
             correo electrónico 
             <a href='https://mail.google.com/mail/?view=cm&fs=1&to=joyferramos@gmail.com' target='_blank'>joyferramos@gmail.com</a> o 
             <a href='https://discord.com/app' target='_blank'>Discord</a> id: #6528"

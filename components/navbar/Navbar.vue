@@ -5,6 +5,7 @@
       v-for="({ sectionName, icon, link }, index) in sections"
       :to="`/${link}`"
       :key="index"
+      class="link__remove-underline"
     >
       <PrimaryButton
         :text="sectionName"
@@ -35,7 +36,7 @@ export default {
     return {
       sections: [
         { icon: mdiAccount, sectionName: "Sobre mí", link: "" },
-        { icon: mdiFolderHeart, sectionName: "Colección", link: "" },
+        { icon: mdiFolderHeart, sectionName: "Colección", link: "projects" },
         { icon: mdiCommentQuestion, sectionName: "Acerca", link: "about" },
       ],
     };
@@ -56,6 +57,11 @@ export default {
         sectionName === "Acerca"
       ) {
         return "section__current-section";
+      } else if (
+        this.$route.fullPath === "/projects" &&
+        sectionName === "Colección"
+      ) {
+        return "section__current-section";
       } else {
         return "";
       }
@@ -67,5 +73,8 @@ export default {
 <style scoped>
 .section__current-section {
   text-decoration: underline;
+}
+.link__remove-underline {
+  text-decoration: none;
 }
 </style>

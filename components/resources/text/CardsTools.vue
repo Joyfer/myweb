@@ -1,17 +1,5 @@
 <template>
-  <div>
-    <div class="d-flex justify-center align-center flex-column">
-      <v-col cols="12" sm="7">
-        <p class="text-justify text-body-1">
-          Cada día práctico y aprendo diferentes herramientas para llegar a ser
-          un programador completo
-          <span class="text-h6 text__title-purple primary--text">
-            full-stack</span
-          >. Actualmente aprendo y programo en:
-        </p>
-      </v-col>
-    </div>
-    <v-col cols="12" sm="7" class="mx-auto">
+    <v-col cols="12" sm="7">
       <v-row justify="center">
         <v-col
           cols="12"
@@ -34,7 +22,6 @@
         </v-col>
       </v-row>
     </v-col>
-  </div>
 </template>
 
 <script>
