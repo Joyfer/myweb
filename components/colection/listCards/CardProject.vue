@@ -1,10 +1,18 @@
 <template>
   <v-hover v-slot="{ hover }">
-    <v-card outlined elevation="0">
+    <v-card
+      outlined
+      elevation="0"
+      height="300"
+      v-ripple
+      nuxt
+      :to="`/colection/${id}`"
+    >
       <v-img
+        :lazy-src="image"
         :src="image"
         class="white--text align-end"
-        gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+        gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.4)"
         height="100%"
       >
         <v-expand-transition>
@@ -30,6 +38,10 @@ export default {
       required: true,
     },
     image: {
+      type: String,
+      required: true,
+    },
+    id: {
       type: String,
       required: true,
     },

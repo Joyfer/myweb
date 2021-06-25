@@ -30,6 +30,11 @@ export default {
   components: {
     TitleAndText,
   },
+  head() {
+    return {
+      title: "Acerca",
+    };
+  },
 };
 </script>
 

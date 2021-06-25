@@ -16,11 +16,13 @@
               :icon="AccountIcon"
               :outlined="true"
               class="my-1 my-md-0"
+              @click.native="move"
             />
             <PrimaryButton
               text="Ver colección"
               :icon="FolderIcon"
               class="my-1 my-md-0"
+              nuxtLink="/colection"
             />
           </div>
         </v-col>
@@ -40,7 +42,7 @@
         </v-col>
       </v-row>
     </section>
-    <section class="mt-15 mt-sm-4">
+    <section class="mt-15 mt-sm-4" id="texto-hola">
       <v-row class="align-center justify-center">
         <v-col cols="12">
           <v-img
@@ -119,6 +121,14 @@ export default {
       FolderIcon: mdiFolderHeart,
       ArrowDownicon: mdiArrowDownBold,
     };
+  },
+  methods: {
+    move() {
+      this.$vuetify.goTo("#texto-hola", {
+        duration: 300,
+        easing: "easeInOutCubic",
+      });
+    },
   },
 };
 </script>

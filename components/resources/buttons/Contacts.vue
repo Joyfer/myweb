@@ -21,9 +21,9 @@ export default {
   data() {
     return {
       contacts: [
-        { icon: mdiTelegram, link: "https://getbootstrap.com/" },
-        { icon: mdiGithub, link: "https://getbootstrap.com/" },
-        { icon: mdiGmail, link: "https://getbootstrap.com/" },
+        { icon: mdiTelegram, link: "https://t.me/JoyferR" },
+        { icon: mdiGithub, link: "https://github.com/Joyfer" },
+        { icon: mdiGmail, link: "https://mail.google.com/mail/?view=cm&fs=1&to=joyferramos@gmail.com" },
       ],
     };
   },

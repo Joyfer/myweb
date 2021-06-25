@@ -21,8 +21,12 @@
       <v-row class="px-0" justify="center">
         <v-col cols="12" sm="10">
           <v-row dense>
-            <v-col v-for="i in 4" :key="i" cols="6" >
-              <CardProject title="nadanda" image="https://i.imgur.com/NbhMy4s.png" />
+            <v-col
+              v-for="{ id, name, imagenes } in proyectos"
+              :key="id"
+              cols="6"
+            >
+              <CardProject :title="name" :image="imagenes[0]" :id="id" />
             </v-col>
           </v-row>
         </v-col>
@@ -35,6 +39,7 @@
 import TitleAndText from "../../components/resources/text/TitleAndText";
 import Alert from "../../components/resources/alert/Alert";
 import CardProject from "../../components/colection/listCards/CardProject";
+import { mapState } from "vuex";
 
 import { mdiSchool } from "@mdi/js";
 export default {
@@ -42,11 +47,19 @@ export default {
   components: {
     TitleAndText,
     Alert,
-    CardProject
+    CardProject,
   },
   data() {
     return {
       schoolIcon: mdiSchool,
+    };
+  },
+  computed: {
+    ...mapState(["proyectos"]),
+  },
+  head() {
+    return {
+      title: "Colección",
     };
   },
 };

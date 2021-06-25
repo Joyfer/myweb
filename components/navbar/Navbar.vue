@@ -36,7 +36,7 @@ export default {
     return {
       sections: [
         { icon: mdiAccount, sectionName: "Sobre mí", link: "" },
-        { icon: mdiFolderHeart, sectionName: "Colección", link: "projects" },
+        { icon: mdiFolderHeart, sectionName: "Colección", link: "colection" },
         { icon: mdiCommentQuestion, sectionName: "Acerca", link: "about" },
       ],
     };
@@ -58,7 +58,7 @@ export default {
       ) {
         return "section__current-section";
       } else if (
-        this.$route.fullPath === "/projects" &&
+        this.$route.fullPath.includes("/colection") &&
         sectionName === "Colección"
       ) {
         return "section__current-section";

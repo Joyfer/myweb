@@ -13,15 +13,26 @@ export default {
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" }
+      { hid: "description", name: "description", content: "" },
+      {
+        name: "keywords",
+        content: "Joyfer Ramos, Joyfer, Ramos, Web, Programador, Javascript"
+      },
+      {
+        name: "robots",
+        content: "index"
+      }
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
       {
-        rel: "preconnect", href: "https://fonts.googleapis.com"
+        rel: "preconnect",
+        href: "https://fonts.googleapis.com"
       },
       {
-        rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin: 'true'
+        rel: "preconnect",
+        href: "https://fonts.gstatic.com",
+        crossorigin: "true"
       },
       {
         href:
@@ -64,13 +75,13 @@ export default {
     treeShake: true,
     defaultAssets: false,
     theme: {
-      dark: false,
+      dark: true,
       themes: {
         light: {
-          primary: '#6b63ff',
+          primary: "#6b63ff"
         },
         dark: {
-          primary: colors.blue.darken2,
+          primary: "#6b63ff",
           accent: colors.grey.darken3,
           secondary: colors.blueGrey.darken4,
           info: colors.teal.lighten1,

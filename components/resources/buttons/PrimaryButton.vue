@@ -1,5 +1,13 @@
 <template>
-  <v-btn color="primary" :outlined="outlined" :text="textButton" class="" :large="large">
+  <v-btn
+    color="primary"
+    :outlined="outlined"
+    :text="textButton"
+    class=""
+    :large="large"
+    :nuxt="typeof nuxtLink === 'string' ? true : false"
+    :to="nuxtLink"
+  >
     {{ text }}
     <v-icon v-if="icon" right> {{ icon }} </v-icon>
   </v-btn>
@@ -30,8 +38,13 @@ export default {
     large: {
       type: Boolean,
       required: false,
-      default: false
-    }
+      default: false,
+    },
+    nuxtLink: {
+      type: String,
+      required: false,
+      default: undefined,
+    },
   },
 };
 </script>
