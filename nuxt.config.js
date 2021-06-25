@@ -48,7 +48,7 @@ export default {
   },
 
   generate: {
-    fallback: true
+    routes: ["/colection/1", "/colection/2", "/colection/3", "/colection/4"]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
