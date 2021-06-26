@@ -1,15 +1,17 @@
 <template>
   <v-row class="full-height" align="center" justify="center">
-    <div class="mb-15">
-      <v-col cols="12">
+    <div class="mb-15 full-width">
+      
         <v-img
-          max-height="400"
-          max-width="500"
+          max-height="300"
+          max-width="400"
+          min-width="200"
+          width="100%"
           class="mx-auto"
           src="/svg/undraw_Playful_cat_re_bxiu.svg"
           lazy-src="/svg/undraw_Playful_cat_re_bxiu.svg"
         />
-      </v-col>
+     
       <v-col class="text-center mx-auto" cols="12" sm="7">
         <TitleAndText
           title="Acerca"
@@ -38,5 +40,8 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.full-width{
+  width: 100vw;
+}
 </style>
