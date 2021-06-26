@@ -9,7 +9,7 @@
         :text="sectionName"
         :textButton="true"
         :icon="icon"
-        :class="indexMargin(index)"
+        :class="`${indexMargin(index)} d-none d-sm-flex`"
         :nuxtLink="`/${link}`"
         :key="index"
         :header="true"

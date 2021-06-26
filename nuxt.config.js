@@ -5,15 +5,26 @@ export default {
   target: "static",
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: "%s - Joyfer-Web",
-    title: "Joyfer-Web",
+    titleTemplate: "%s - Joyfer Web",
+    title: "Joyfer Web",
     htmlAttrs: {
       lang: "en"
     },
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" },
+      {
+        hid: "title",
+        name: "title",
+        content:
+          "Joyfer Web - Programador Full-Stack, Javascript."
+      },
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "Mi página personal donde podras encontrar mi perfil, datos, proyectos, intereses y mi lista de contactos."
+      },
       {
         name: "keywords",
         content: "Joyfer Ramos, Joyfer, Ramos, Web, Programador, Javascript"
