@@ -18,7 +18,7 @@ export const state = () => ({
         { icon: "bootstrap", name: "Bootstrap 4.5" },
         { icon: "web", name: "Socket.io" },
         { icon: "language-html5", name: "Templates EJS" }
-      ],
+      ]
     },
     {
       id: "2",
@@ -36,7 +36,7 @@ export const state = () => ({
         { icon: "bootstrap", name: "Bootstrap 5" },
         { icon: "language-javascript", name: "Vanilla Javascript" },
         { icon: "tag", name: "Filtrado de contenido dinámico" }
-      ],
+      ]
     },
     {
       id: "3",
@@ -53,7 +53,7 @@ export const state = () => ({
       caracteristicas: [
         { icon: "vuejs", name: "Vue 2" },
         { icon: "vuetify", name: "Vuetify" }
-      ],
+      ]
     },
     {
       id: "4",
@@ -72,7 +72,24 @@ export const state = () => ({
         { icon: "react", name: "ReactJS" },
         { icon: "nodejs", name: "NextJS" },
         { icon: "material-ui", name: "Material-UI" }
+      ]
+    },
+    {
+      id: "5",
+      name: "Letsplaytgther2",
+      descripcion:
+        "Una versión mejorada de mi anterior aplicación, esta vez con Nuxt usando Static Pages y usando el servidor en otro host",
+      imagenes: [
+        "https://i.imgur.com/zXUS0TN.png",
+        "https://i.imgur.com/WtLd7FT.png"
       ],
+      url: "https://letsplaytgther2.netlify.app/",
+      caracteristicas: [
+        { icon: "nodejs", name: "Nodejs" },
+        { icon: "nuxt", name: "nuxt" },
+        { icon: "vuetify", name: "Vuetify" },
+        { icon: "web", name: "Socket.io" },
+      ]
     }
   ],
   tagFiltrado: ""

@@ -16,8 +16,7 @@ export default {
       {
         hid: "title",
         name: "title",
-        content:
-          "Joyfer Web - Programador Full-Stack, Javascript."
+        content: "Joyfer Web - Programador Full-Stack, Javascript."
       },
       {
         hid: "description",
@@ -59,7 +58,13 @@ export default {
   },
 
   generate: {
-    routes: ["/colection/1", "/colection/2", "/colection/3", "/colection/4"]
+    routes: [
+      "/colection/1",
+      "/colection/2",
+      "/colection/3",
+      "/colection/4",
+      "/colection/5"
+    ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
