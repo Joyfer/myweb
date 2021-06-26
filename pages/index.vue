@@ -5,9 +5,11 @@
         <v-col class="d-flex flex-column align-center" cols="12" sm="6">
           <TitleAndText
             title="Bienvenido"
-            bodyText="Me llamo Joyfer y me dedico a hacer páginas y aplicaciones web, en este
+            bodyText="Me llamo Joyfer y soy técnico en informática, me dedico a hacer páginas 
+            y aplicaciones web, en este
       sitio encontrarás mi perfil y parte de mi trabajo. No dudes en contáctarte
-      conmigo si estás interesado."
+      conmigo si así lo quieres, estaré muy complacido de leerte y si cabe, construir algo genial
+      juntos."
             :header="true"
           />
           <div>
@@ -45,7 +47,7 @@
     </section>
     <section class="mt-15 mt-sm-4" id="texto-hola">
       <v-row class="align-center justify-center">
-        <v-col cols="12">
+        <v-col cols="12" class="mt-12 mt-sm-0">
           <v-img
             class="mx-auto"
             max-height="320"
@@ -57,9 +59,10 @@
           <TitleAndText
             title="¡Hola!"
             bodyText="Soy un programador web apasionado por todo lo relacionado 
-          con la industria. Actualmente resido en Caracas, Venezuela. En mi tiempo 
-          libre programo, o quizá jugando... Hay muchas cosas que me faltan por aprender, 
-          pero lo que nunca me faltará es la motivación para aprenderlas."
+          con la industria y actualmente resido en Caracas, Venezuela. Me dedico
+          tiempo completo a  programar y en mi tiempo 
+          libre también lo hago, o quizá esté jugando a algun videojuego... Me encanta el feedback así que si crees tener algo que podría aportarme
+          me gustaría leer tu mensaje en alguno de mis contactos que dejo más abajo."
           />
         </v-col>
       </v-row>
@@ -68,11 +71,13 @@
       <v-row class="align-center justify-center">
         <v-col cols="12" sm="7">
           <p class="text-justify text-body-1">
-            Cada día práctico y aprendo diferentes herramientas para llegar a
+            Nunca pierdo la motivación y las ganas para seguir aprendiendo cada
+            día más, ayudar a otros programadores y mejorar mis aplicaciones.
+            Es por eso que ada día práctico y aprendo diferentes herramientas para llegar a
             ser un programador completo
             <span class="text-h6 text__title-purple primary--text">
               full-stack</span
-            >. Actualmente aprendo y programo en:
+            >. Actualmente trabajo y sigo mejorando en:
           </p>
         </v-col>
         <CardsTools />
