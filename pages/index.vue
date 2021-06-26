@@ -73,7 +73,7 @@
           <p class="text-justify text-body-1">
             Nunca pierdo la motivación y las ganas para seguir aprendiendo cada
             día más, ayudar a otros programadores y mejorar mis aplicaciones.
-            Es por eso que ada día práctico y aprendo diferentes herramientas para llegar a
+            Es por eso que cada día práctico y aprendo diferentes herramientas para llegar a
             ser un programador completo
             <span class="text-h6 text__title-purple primary--text">
               full-stack</span
