@@ -30,18 +30,15 @@
           </div>
         </v-col>
         <v-col cols="12" sm="5">
-          <v-responsive max-height="400">
-            <v-img
-              max-height="400"
-              max-width="500"
-              class="mx-auto"
-              src="/svg/undraw_building_websites_i78t.svg"
-              lazy-src="/svg/undraw_building_websites_i78t.svg"
-            />
-          </v-responsive>
+          <v-img
+            eager
+            max-height="400"
+            max-width="500"
+            class="mx-auto"
+            src="/svg/undraw_building_websites_i78t.svg"
+          />
         </v-col>
-
-        <v-col cols="12" class="d-flex justify-center">
+        <v-col cols="12">
           <v-icon class="object" color="primary" x-large>{{
             ArrowDownicon
           }}</v-icon>
@@ -148,6 +145,7 @@ export default {
 .object {
   -webkit-animation: MoveUpDown 1s linear infinite;
   animation: MoveUpDown 1s linear infinite;
+  margin: 0 50%;
 }
 
 @keyframes MoveUpDown {
