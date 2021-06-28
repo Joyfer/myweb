@@ -53,8 +53,7 @@
               class="mx-auto"
               max-height="320"
               max-width="570"
-              src="/svg/undraw_Profile_re_4a55.svg"
-              lazy-src="/svg/undraw_Profile_re_4a55.svg" /></v-responsive
+              src="/svg/undraw_Profile_re_4a55.svg" /></v-responsive
         ></v-col>
         <v-col class="text-center" cols="12" sm="7">
           <TitleAndText
@@ -92,8 +91,7 @@
               class="mx-auto mt-15"
               max-height="320"
               max-width="570"
-              src="/svg/undraw_quick_chat_re_bit5.svg"
-              lazy-src="/svg/undraw_quick_chat_re_bit5.svg" /></v-responsive
+              src="/svg/undraw_quick_chat_re_bit5.svg" /></v-responsive
         ></v-col>
         <v-col class="text-center" cols="12" sm="7">
           <TitleAndText
