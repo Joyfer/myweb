@@ -18,7 +18,7 @@
 <script>
 import Navbar from "~/components/navbar/Navbar";
 import Footer from "~/components/navbar/Footer";
-import Loading from "../components/loading/Loading";
+import Loading from "~/components/loading/Loading";
 export default {
   name: "layout",
   components: {
