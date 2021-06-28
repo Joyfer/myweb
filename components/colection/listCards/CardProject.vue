@@ -9,7 +9,6 @@
       :to="`/colection/${id}`"
     >
       <v-img
-        :lazy-src="image"
         :src="image"
         class="white--text align-end"
         gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.1)"

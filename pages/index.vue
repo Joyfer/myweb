@@ -30,14 +30,17 @@
           </div>
         </v-col>
         <v-col cols="12" sm="5">
-          <v-img
-            max-height="400"
-            max-width="500"
-            class="mx-auto"
-            src="/svg/undraw_building_websites_i78t.svg"
-            lazy-src="/svg/undraw_building_websites_i78t.svg"
-          />
+          <v-responsive max-height="400">
+            <v-img
+              max-height="400"
+              max-width="500"
+              class="mx-auto"
+              src="/svg/undraw_building_websites_i78t.svg"
+              lazy-src="/svg/undraw_building_websites_i78t.svg"
+            />
+          </v-responsive>
         </v-col>
+
         <v-col cols="12" class="d-flex justify-center">
           <v-icon class="object" color="primary" x-large>{{
             ArrowDownicon
@@ -48,13 +51,14 @@
     <section class="mt-15 mt-sm-4" id="texto-hola">
       <v-row class="align-center justify-center">
         <v-col cols="12" class="mt-12 mt-sm-0">
-          <v-img
-            class="mx-auto"
-            max-height="320"
-            max-width="570"
-            src="/svg/undraw_Profile_re_4a55.svg"
-            lazy-src="/svg/undraw_Profile_re_4a55.svg"
-        /></v-col>
+          <v-responsive max-height="320">
+            <v-img
+              class="mx-auto"
+              max-height="320"
+              max-width="570"
+              src="/svg/undraw_Profile_re_4a55.svg"
+              lazy-src="/svg/undraw_Profile_re_4a55.svg" /></v-responsive
+        ></v-col>
         <v-col class="text-center" cols="12" sm="7">
           <TitleAndText
             title="¡Hola!"
@@ -72,9 +76,9 @@
         <v-col cols="12" sm="7">
           <p class="text-justify text-body-1">
             Nunca pierdo la motivación y las ganas para seguir aprendiendo cada
-            día más, ayudar a otros programadores y mejorar mis aplicaciones.
-            Es por eso que cada día práctico y aprendo diferentes herramientas para llegar a
-            ser un programador completo
+            día más, ayudar a otros programadores y mejorar mis aplicaciones. Es
+            por eso que siempre práctico y aprendo diferentes herramientas para
+            llegar a ser un programador completo
             <span class="text-h6 text__title-purple primary--text">
               full-stack</span
             >. Actualmente trabajo y sigo mejorando en:
@@ -86,13 +90,14 @@
     <section class="mt-15">
       <v-row class="align-center justify-center">
         <v-col cols="12">
-          <v-img
-            class="mx-auto mt-15"
-            max-height="320"
-            max-width="570"
-            src="/svg/undraw_quick_chat_re_bit5.svg"
-            lazy-src="/svg/undraw_quick_chat_re_bit5.svg"
-        /></v-col>
+          <v-responsive max-height="320">
+            <v-img
+              class="mx-auto mt-15"
+              max-height="320"
+              max-width="570"
+              src="/svg/undraw_quick_chat_re_bit5.svg"
+              lazy-src="/svg/undraw_quick_chat_re_bit5.svg" /></v-responsive
+        ></v-col>
         <v-col class="text-center" cols="12" sm="7">
           <TitleAndText
             title="Contáctame"
