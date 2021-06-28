@@ -13,7 +13,7 @@
           />
           <Alert
             bodyText="El contenido mostrado a continuación es desarrollado por mí utlizando diferentes librerías y 
-          frameworks. Ningún proyecto ha sido obtenido de cursos o YouTube."
+          frameworks."
             :icon="schoolIcon"
           />
         </v-col>
