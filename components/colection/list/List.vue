@@ -6,7 +6,10 @@
         <v-divider v-if="index != 0" :key="index" inset></v-divider>
         <v-list-item v-if="icon" :key="name">
           <v-list-item-action>
-            <v-icon color="primary">mdi-{{ icon }}</v-icon>
+            <v-icon
+              :color="$vuetify.theme.dark === true ? 'white' : 'primary'"
+              >mdi-{{ icon }}</v-icon
+            >
           </v-list-item-action>
           <v-list-item-content>
             <v-list-item-title v-text="name"></v-list-item-title>

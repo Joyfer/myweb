@@ -8,7 +8,7 @@
           v-for="({ name, image }, index) in tools"
           :key="index"
         >
-          <v-card outlined height="100%"
+          <v-card min-height="142" outlined height="100%"
             ><v-card-title class="justify-center">{{ name }}</v-card-title>
             <v-card-text>
               <v-img
