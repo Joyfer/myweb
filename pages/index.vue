@@ -38,7 +38,7 @@
             src="/svg/undraw_building_websites_i78t.svg"
           />
         </v-col>
-        <v-col cols="12">
+        <v-col cols="12" class="d-flex justify-center">
           <v-icon class="object" color="primary" x-large>{{
             ArrowDownicon
           }}</v-icon>
@@ -48,7 +48,11 @@
     <section class="mt-15 mt-sm-4" id="texto-hola">
       <v-row class="align-center justify-center">
         <v-col cols="12" class="mt-12 mt-sm-0">
-          <v-responsive max-height="320">
+          <v-responsive
+            content-class="my-auto"
+            :height="$vuetify.breakpoint.xsOnly ? 220 : 320"
+            min-height="100"
+          >
             <v-img
               class="mx-auto"
               max-height="320"
@@ -86,7 +90,11 @@
     <section class="mt-15">
       <v-row class="align-center justify-center">
         <v-col cols="12">
-          <v-responsive max-height="320">
+          <v-responsive
+            content-class="my-auto"
+            :height="$vuetify.breakpoint.xsOnly ? 220 : 320"
+            min-height="100"
+          >
             <v-img
               class="mx-auto mt-15"
               max-height="320"
@@ -143,7 +151,6 @@ export default {
 .object {
   -webkit-animation: MoveUpDown 1s linear infinite;
   animation: MoveUpDown 1s linear infinite;
-  margin: 0 50%;
 }
 
 @keyframes MoveUpDown {
