@@ -1,7 +1,7 @@
 <template>
   <main>
     <section>
-      <v-row class="full-height align-center justify-center">
+      <v-row class="full-height" align="center" justify="center">
         <v-col class="d-flex flex-column align-center" cols="12" sm="6">
           <TitleAndText
             title="Bienvenido"
