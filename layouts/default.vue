@@ -16,9 +16,9 @@
 </template>
 
 <script>
-import Navbar from "~/components/navbar/Navbar";
-import Footer from "~/components/navbar/Footer";
-import Loading from "~/components/loading/Loading";
+import Navbar from "../components/navbar/Navbar";
+import Footer from "../components/navbar/Footer";
+import Loading from "../components/loading/loading";
 export default {
   name: "layout",
   components: {
