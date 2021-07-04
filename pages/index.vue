@@ -3,14 +3,13 @@
     <section>
       <v-row class="full-height" align="center" justify="center">
         <v-col class="d-flex flex-column align-center" cols="12" sm="6">
+          <TextAnimated />
           <TitleAndText
-            title="Bienvenido"
             bodyText="Me llamo Joyfer y soy técnico en informática, me dedico a hacer páginas 
             y aplicaciones web, en este
       sitio encontrarás mi perfil y parte de mi trabajo. No dudes en contáctarte
       conmigo si así lo quieres, estaré muy complacido de leerte y si cabe, construir algo genial
       juntos."
-            :header="true"
           />
           <div>
             <PrimaryButton
@@ -29,7 +28,7 @@
             />
           </div>
         </v-col>
-        <v-col cols="12" sm="5">
+        <v-col cols="12" sm="6">
           <v-img
             eager
             max-height="400"
@@ -121,6 +120,7 @@
 import TitleAndText from "../components/resources/text/TitleAndText";
 import CardsTools from "../components/resources/text/CardsTools";
 import PrimaryButton from "../components/resources/buttons/PrimaryButton";
+import TextAnimated from "~/components/home/TextAnimated.vue";
 
 import { mdiAccountOutline, mdiFolderHeart, mdiArrowDownBold } from "@mdi/js";
 export default {
@@ -129,6 +129,7 @@ export default {
     TitleAndText,
     PrimaryButton,
     CardsTools,
+    TextAnimated,
   },
   data() {
     return {

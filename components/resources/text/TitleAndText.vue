@@ -1,9 +1,9 @@
 <template>
   <div>
-    <h2 v-if="header" class="text-h2 text__title-purple mb-3 primary--text text-center">
-      {{ title }}
-    </h2>
-    <h3 v-else class="text-h3 text__title-purple mb-6 primary--text text-center">
+    <h3
+      v-if="title"
+      class="text-h3 text__title-purple mb-6 primary--text text-center"
+    >
       {{ title }}
     </h3>
     <p class="text-body-1 text-justify" v-html="bodyText"></p>
@@ -16,16 +16,11 @@ export default {
   props: {
     title: {
       type: String,
-      required: true,
+      required: false,
     },
     bodyText: {
       type: String,
       required: true,
-    },
-    header: {
-      type: Boolean,
-      required: false,
-      default: false,
     },
   },
 };
