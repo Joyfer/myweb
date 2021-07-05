@@ -13,6 +13,7 @@
     :to="nuxtLink"
     :href="href"
     :target="href ? '_blank' : undefined"
+    :tile="outlined"
   >
     {{ text }}
     <v-icon v-if="icon" right> {{ icon }} </v-icon>

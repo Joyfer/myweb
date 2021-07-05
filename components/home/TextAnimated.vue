@@ -2,12 +2,12 @@
   <div class="d-flex justify-center flex-column full-width text-center">
     <span class="text-h4 mb-3">¿Pensando en...</span>
     <client-only>
-    <!-- <vue-typer
+    <vue-typer
       class="text-h2 text__title-purple mb-3 primary--text pb-3 height"
       :text="textList"
       erase-style='select-back'
       :erase-delay='60'
-    ></vue-typer> -->
+    ></vue-typer>
     </client-only>
   </div>
 </template>

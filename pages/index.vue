@@ -5,14 +5,14 @@
         <v-col class="d-flex flex-column align-center" cols="12" sm="6">
           <TextAnimated />
           <TitleAndText
-            bodyText="Me llamo Joyfer y soy técnico en informática, me dedico a hacer páginas 
+            bodyText="¡Pues has llegado al sitio correcto! Me llamo Joyfer y soy técnico en informática, me dedico a hacer páginas 
             y aplicaciones web, en este
       sitio encontrarás mi perfil y parte de mi trabajo. No dudes en contáctarte
       conmigo si así lo quieres, estaré muy complacido de leerte y si cabe, construir algo genial
       juntos."
           />
           <ChatCard />
-          <div>
+          <div class="mt-4">
             <PrimaryButton
               text="Ver perfil"
               :icon="AccountIcon"
@@ -63,7 +63,7 @@
         <v-col class="text-center" cols="12" sm="7">
           <TitleAndText
             title="¡Hola!"
-            bodyText="Soy un programador web apasionado por todo lo relacionado 
+            bodyText="'Soy un programador web apasionado por todo lo relacionado 
           con la industria y actualmente resido en Caracas, Venezuela. Me dedico
           tiempo completo a  programar y en mi tiempo 
           libre también lo hago, o quizá esté jugando a algun videojuego... Me encanta el feedback así que si crees tener algo que podría aportarme
@@ -122,7 +122,7 @@ import TitleAndText from "../components/resources/text/TitleAndText";
 import CardsTools from "../components/resources/text/CardsTools";
 import PrimaryButton from "../components/resources/buttons/PrimaryButton";
 import TextAnimated from "~/components/home/TextAnimated.vue";
-import ChatCard from "../components/resources/chatCard/ChatCard";
+import ChatCard from "../components/home/chatCard/ChatCard";
 
 import { mdiAccountOutline, mdiFolderHeart, mdiArrowDownBold } from "@mdi/js";
 export default {

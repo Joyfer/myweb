@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import PrimaryButton from "../buttons/PrimaryButton";
+import PrimaryButton from "~/components/resources/buttons/PrimaryButton";
 import { mdiTelegram } from "@mdi/js";
 export default {
   name: "ChatCard",

@@ -10,6 +10,7 @@
     >
       <v-img
         :src="image"
+        :lazy-src="image"
         class="white--text align-end"
         gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.1)"
         height="100%"
