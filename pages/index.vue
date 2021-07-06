@@ -11,22 +11,23 @@
       conmigo si así lo quieres, estaré muy complacido de leerte y si cabe, construir algo genial
       juntos."
           />
-          <ChatCard />
-          <div class="mt-4">
+
+          <div class="full-width d-flex flex-column justify-center">
             <PrimaryButton
               text="Ver perfil"
               :icon="AccountIcon"
               :outlined="true"
-              class="my-1 my-md-0"
+              class="my-1"
               @click.native="move"
               :header="true"
             />
             <PrimaryButton
               text="Ver colección"
               :icon="FolderIcon"
-              class="my-1 my-md-0"
+              class="my-1"
               nuxtLink="/colection"
             />
+            <ChatCard class="mt-3" />
           </div>
         </v-col>
         <v-col cols="12" sm="6">
@@ -73,7 +74,7 @@
       </v-row>
     </section>
     <section class="mb-15">
-      <v-row class="align-center justify-center">
+      <v-row align="center" justify="center" class="flex-column">
         <v-col cols="12" sm="7">
           <p class="text-justify text-body-1">
             Nunca pierdo la motivación y las ganas para seguir aprendiendo cada
@@ -86,6 +87,9 @@
           </p>
         </v-col>
         <CardsTools />
+        <v-col cols="12" sm="7">
+       <KnowledgeList />
+       </v-col>
       </v-row>
     </section>
     <section class="mt-15">
@@ -123,6 +127,7 @@ import CardsTools from "../components/resources/text/CardsTools";
 import PrimaryButton from "../components/resources/buttons/PrimaryButton";
 import TextAnimated from "~/components/home/TextAnimated.vue";
 import ChatCard from "../components/home/chatCard/ChatCard";
+import KnowledgeList from "../components/home/expansionPanel/KnowledgeList"
 
 import { mdiAccountOutline, mdiFolderHeart, mdiArrowDownBold } from "@mdi/js";
 export default {
@@ -133,6 +138,7 @@ export default {
     CardsTools,
     TextAnimated,
     ChatCard,
+    KnowledgeList
   },
   data() {
     return {

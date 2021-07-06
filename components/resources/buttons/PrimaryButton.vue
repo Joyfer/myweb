@@ -9,7 +9,7 @@
     :text="textButton"
     class=""
     :large="large"
-    :nuxt="typeof nuxtLink === 'string' ? true : false"
+    :nuxt="typeof nuxtLink === 'string'"
     :to="nuxtLink"
     :href="href"
     :target="href ? '_blank' : undefined"

@@ -1,18 +1,18 @@
 <template>
-    <v-app light>
-      <Loading class="loading" v-if="loading"></Loading>
-      <v-main v-show="loading === false">
-        <div>
-          <Navbar />
-        </div>
-        <v-container>
-          <nuxt />
-        </v-container>
-        <div class="mt-16">
-          <Footer />
-        </div>
-      </v-main>
-    </v-app>
+  <v-app light>
+    <Loading class="loading" v-if="loading"></Loading>
+    <v-main v-show="loading === false">
+      <div>
+        <Navbar />
+      </div>
+      <v-container>
+        <nuxt />
+      </v-container>
+      <div class="mt-16">
+        <Footer />
+      </div>
+    </v-main>
+  </v-app>
 </template>
 
 <script>
@@ -61,5 +61,8 @@ export default {
   text-align: center;
   justify-content: center;
   color: white;
+}
+.full-width {
+  width: 100%;
 }
 </style>

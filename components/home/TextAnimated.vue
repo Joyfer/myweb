@@ -31,9 +31,6 @@ export default {
 </script>
 
 <style scoped>
-.full-width {
-  width: 100%;
-}
 .vue-typer >>> span {
   color: #6b63ff;
 }
