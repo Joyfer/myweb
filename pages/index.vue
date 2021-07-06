@@ -13,20 +13,25 @@
           />
 
           <div class="full-width d-flex flex-column justify-center">
-            <PrimaryButton
-              text="Ver perfil"
-              :icon="AccountIcon"
-              :outlined="true"
-              class="my-1"
-              @click.native="move"
-              :header="true"
-            />
-            <PrimaryButton
-              text="Ver colección"
-              :icon="FolderIcon"
-              class="my-1"
-              nuxtLink="/colection"
-            />
+            <v-row>
+              <v-col cols="12" md="6">
+                <PrimaryButton
+                  text="Ver perfil"
+                  :icon="AccountIcon"
+                  :outlined="true"
+                  class="full-width"
+                  @click.native="move"
+                  :header="true"
+                /> </v-col
+              ><v-col cols="12" md="6">
+                <PrimaryButton
+                  text="Ver colección"
+                  :icon="FolderIcon"
+                  class="full-width"
+                  nuxtLink="/colection"
+                />
+              </v-col>
+            </v-row>
             <ChatCard class="mt-3" />
           </div>
         </v-col>
@@ -88,8 +93,8 @@
         </v-col>
         <CardsTools />
         <v-col cols="12" sm="7">
-       <KnowledgeList />
-       </v-col>
+          <KnowledgeList />
+        </v-col>
       </v-row>
     </section>
     <section class="mt-15">
@@ -127,7 +132,7 @@ import CardsTools from "../components/resources/text/CardsTools";
 import PrimaryButton from "../components/resources/buttons/PrimaryButton";
 import TextAnimated from "~/components/home/TextAnimated.vue";
 import ChatCard from "../components/home/chatCard/ChatCard";
-import KnowledgeList from "../components/home/expansionPanel/KnowledgeList"
+import KnowledgeList from "../components/home/expansionPanel/KnowledgeList";
 
 import { mdiAccountOutline, mdiFolderHeart, mdiArrowDownBold } from "@mdi/js";
 export default {
@@ -138,7 +143,7 @@ export default {
     CardsTools,
     TextAnimated,
     ChatCard,
-    KnowledgeList
+    KnowledgeList,
   },
   data() {
     return {
