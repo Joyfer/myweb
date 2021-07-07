@@ -63,7 +63,8 @@ export default {
       "/colection/2",
       "/colection/3",
       "/colection/4",
-      "/colection/5"
+      "/colection/5",
+      "/colection/6"
     ]
   },
 
