@@ -13,8 +13,8 @@
           />
           <Alert
             bodyText="El contenido mostrado a continuación es desarrollado por mí utlizando diferentes librerías y 
-          frameworks. Mis trabajos son 100% personalizados para adaptarse a los requerimientos del proyecto y tu presupuesto, sin
-          hacer uso de plantillas y elementos que vemos repetidos en muchas webs."
+          frameworks. Mis trabajos son 100% personalizados para adaptarse a los requerimientos del proyecto y presupuesto
+          para hacer trabajos más flexibles."
             :icon="schoolIcon"
           />
         </v-col>

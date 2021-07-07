@@ -76,7 +76,7 @@
         </v-col>
       </v-row>
     </section>
-    <section class="mb-15">
+    <section>
       <v-row align="center" justify="center" class="flex-column">
         <v-col cols="12" sm="7">
           <p class="text-justify text-body-1">
@@ -85,8 +85,9 @@
             Es por eso que siempre practico y aprendo diferentes herramientas
             para llegar a ser un programador completo
             <span class="text-h6 text__title-purple primary--text">
-              full-stack</span
-            >. Actualmente trabajo y sigo mejorando en:
+              full-stack.</span
+            > 
+             Actualmente trabajo y sigo mejorando en:
           </p>
         </v-col>
         <CardsTools />
@@ -95,7 +96,7 @@
         </v-col>
       </v-row>
     </section>
-    <section class="mt-15">
+    <section>
       <v-row class="align-center justify-center">
         <v-col cols="12">
           <v-responsive

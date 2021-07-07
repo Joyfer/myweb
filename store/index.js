@@ -69,7 +69,7 @@ export const state = () => ({
       url: "https://next-joyfer.herokuapp.com/",
       gitRepo: "https://github.com/Joyfer/e-commerce",
       caracteristicas: [
-        { icon: "react", name: "ReactJS" },
+        { icon: "react", name: "React" },
         { icon: "nodejs", name: "NextJS" },
         { icon: "material-ui", name: "Material-UI" }
       ]
@@ -86,9 +86,23 @@ export const state = () => ({
       url: "https://letsplaytgther2.netlify.app/",
       caracteristicas: [
         { icon: "nodejs", name: "Nodejs" },
-        { icon: "nuxt", name: "nuxt" },
+        { icon: "nuxt", name: "Nuxt" },
         { icon: "vuetify", name: "Vuetify" },
-        { icon: "web", name: "Socket.io" },
+        { icon: "web", name: "Socket.io" }
+      ]
+    },
+    {
+      id: "6",
+      name: "React TODO",
+      descripcion: `Un TODO (Cosas por hacer), sencillo, creado en React con el Context API como state management y Material UI, con el 
+        poder de guardar cosas en el almacenamiento del navegador siendo así una aplicación funcional`,
+      imagenes: [
+        "https://i.imgur.com/cCIYFMl.png",
+      ],
+      url: "https://joy-todo-react.netlify.app/",
+      caracteristicas: [
+        { icon: "react", name: "React" },
+        { icon: "nuxt", name: "Material-UI" },
       ]
     }
   ],
