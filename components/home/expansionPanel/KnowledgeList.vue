@@ -1,6 +1,13 @@
 <template>
   <div class="full-width">
-    <v-card outlined>
+    <div v-for="({ icon, text }, index) in firstList" :key="index">
+      <div class="d-flex align-start">
+        <v-icon class="pr-2" color="primary" x-large>{{ icon }}</v-icon>
+        <p class="text-body-1 ma-0" v-text="text"></p>
+      </div>
+      <v-divider v-if="index === 0" class="my-3"></v-divider>
+    </div>
+    <v-card outlined class="mt-4">
       <v-expansion-panels v-model="panel" accordion flat>
         <v-expansion-panel>
           <v-expansion-panel-header
@@ -9,15 +16,8 @@
             :expand-icon="mdiArrowDownBoldCircleOutline"
             >Ver más conocimientos...</v-expansion-panel-header
           >
-          <v-expansion-panel-content class="pt-5">
-            <div v-for="({ icon, text }, index) in firstList" :key="index">
-              <div class="d-flex align-start">
-                <v-icon class="pr-2" color="primary" x-large>{{ icon }}</v-icon>
-                <p class="text-body-1 ma-0" v-text="text"></p>
-              </div>
-              <v-divider v-if="index === 0" class="my-3"></v-divider>
-            </div>
-            <ul class="pt-3">
+          <v-expansion-panel-content>
+            <ul class="py-3">
               <li v-for="item in list" :key="item">{{ item }}</li>
             </ul>
           </v-expansion-panel-content>
