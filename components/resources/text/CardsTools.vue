@@ -1,10 +1,10 @@
 <template>
-    <v-col cols="12" sm="7">
+    <v-col cols="12" md="10" lg="7">
       <v-row justify="center">
         <v-col
           cols="12"
           sm="6"
-          lg="4"
+          md="4"
           v-for="({ name, image }, index) in tools"
           :key="index"
         >

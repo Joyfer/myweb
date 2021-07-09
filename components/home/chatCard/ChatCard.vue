@@ -19,7 +19,7 @@
         <v-list-item-title>Joyfer Ramos</v-list-item-title>
         <v-list-item-subtitle>Téc.Informático</v-list-item-subtitle>
       </v-list-item-content>
-      <v-list-item-action>
+      <v-list-item-action v-show="$vuetify.breakpoint.smAndUp">
         <PrimaryButton
           text="Envíame un mensaje"
           :icon="telegramIcon"

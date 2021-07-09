@@ -1,8 +1,12 @@
 <template>
   <main>
     <section>
-      <v-row class="full-height" align="center" justify="center">
-        <v-col class="d-flex flex-column align-center" cols="12" sm="6">
+      <v-row
+        :class="$vuetify.breakpoint.smAndDown ? '' : 'full-height'"
+        align="center"
+        justify="center"
+      >
+        <v-col class="d-flex flex-column align-center" cols="12" md="6">
           <TextAnimated />
           <TitleAndText
             bodyText="¡Pues has llegado al sitio correcto! Me llamo Joyfer y soy técnico en informática. 
@@ -12,7 +16,7 @@
           />
           <div class="full-width d-flex flex-column justify-center">
             <v-row>
-              <v-col cols="12" md="6">
+              <v-col cols="12" sm="6">
                 <PrimaryButton
                   text="Ver perfil"
                   :icon="AccountIcon"
@@ -21,7 +25,7 @@
                   @click.native="move"
                   :header="true"
                 /> </v-col
-              ><v-col cols="12" md="6">
+              ><v-col cols="12" sm="6">
                 <PrimaryButton
                   text="Ver colección"
                   :icon="FolderIcon"
@@ -33,7 +37,7 @@
             <ChatCard class="mt-3" />
           </div>
         </v-col>
-        <v-col cols="12" sm="6">
+        <v-col cols="12" md="6" v-show="$vuetify.breakpoint.mdAndUp">
           <v-img
             eager
             max-height="400"
@@ -64,7 +68,7 @@
               src="/svg/undraw_Profile_re_4a55.svg"
               lazy-src="/svg/undraw_Profile_re_4a55.svg" /></v-responsive
         ></v-col>
-        <v-col class="text-center" cols="12" sm="7">
+        <v-col class="text-center" cols="12" md="10" lg="7">
           <TitleAndText
             title="¡Hola!"
             bodyText="Soy un programador web apasionado por todo lo relacionado con la industria, y actualmente 
@@ -78,7 +82,7 @@
     </section>
     <section>
       <v-row align="center" justify="center" class="flex-column">
-        <v-col cols="12" sm="7">
+        <v-col cols="12" md="10" lg="7">
           <p class="text-justify text-body-1">
             Nunca pierdo la motivación y las ganas para seguir aprendiendo cada
             día más, en ayudar a otros programadores y mejorar mis aplicaciones.
@@ -86,12 +90,12 @@
             para llegar a ser un programador completo
             <span class="text-h6 text__title-purple primary--text">
               full-stack.</span
-            > 
-             Actualmente trabajo y sigo mejorando en:
+            >
+            Actualmente trabajo y sigo mejorando en:
           </p>
         </v-col>
         <CardsTools />
-        <v-col cols="12" sm="7">
+        <v-col cols="12" md="10" lg="7">
           <KnowledgeList />
         </v-col>
       </v-row>
@@ -110,7 +114,7 @@
               max-width="570"
               src="/svg/undraw_quick_chat_re_bit5.svg" /></v-responsive
         ></v-col>
-        <v-col class="text-center" cols="12" sm="7">
+        <v-col class="text-center" cols="12" md="10" lg="7">
           <TitleAndText
             title="Contáctame"
             bodyText="Si quieres comunicarte conmigo, puedes hacerlo a través de 
