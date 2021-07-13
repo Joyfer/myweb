@@ -15,7 +15,7 @@
           <p class="text-body-2 my-5" v-text="filtrado[0].descripcion"></p>
           <div class="mb-5">
             <PrimaryButton
-              class="mx-1"
+              class="mx-1 mb-1 mb-sm-0"
               outlined
               :href="filtrado[0].url"
               text="¡Visitar!"
@@ -23,7 +23,7 @@
               :header="true"
             ></PrimaryButton>
             <PrimaryButton
-              class="mx-1"
+              class="mx-1 mb-1 mb-sm-0"
               href="https://mail.google.com/mail/?view=cm&fs=1&to=joyferramos@gmail.com"
               text="Envíame un correo"
               icon="mdi-gmail"

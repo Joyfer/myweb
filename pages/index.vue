@@ -134,7 +134,7 @@ import TitleAndText from "../components/resources/text/TitleAndText";
 import CardsTools from "../components/resources/text/CardsTools";
 import PrimaryButton from "../components/resources/buttons/PrimaryButton";
 import TextAnimated from "~/components/home/TextAnimated.vue";
-import ChatCard from "../components/home/chatCard/ChatCard";
+import ChatCard from "../components/resources/chatCard/ChatCard";
 import KnowledgeList from "../components/home/expansionPanel/KnowledgeList";
 
 import { mdiAccountOutline, mdiFolderHeart, mdiArrowDownBold } from "@mdi/js";

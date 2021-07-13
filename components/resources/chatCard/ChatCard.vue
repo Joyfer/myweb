@@ -11,7 +11,7 @@
         class="blob-green"
       >
         <v-avatar size="40">
-          <v-img src="https://scontent-mia3-1.xx.fbcdn.net/v/t1.6435-1/p160x160/50820905_2217295705159022_2230307161680904192_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=7206a8&_nc_ohc=S1L3ZMBgWCIAX8W4YlI&_nc_ht=scontent-mia3-1.xx&tp=6&oh=dd3042bf3903a2ab838774e684ff750a&oe=60E7C2E6"></v-img>
+          <v-img src="https://i.imgur.com/Wz370ut.jpg"></v-img>
         </v-avatar>
       </v-badge>
 

@@ -2,8 +2,7 @@
     <v-col cols="12" md="10" lg="7">
       <v-row justify="center">
         <v-col
-          cols="12"
-          sm="6"
+          cols="6"
           md="4"
           v-for="({ name, image }, index) in tools"
           :key="index"

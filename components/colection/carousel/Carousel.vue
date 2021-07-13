@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-carousel v-model="model" height="450">
+    <v-carousel v-model="model" :height="$vuetify.breakpoint.xsOnly ? 250 : 450">
       <v-carousel-item
         v-for="imagen in imagenes"
         :key="imagen"
