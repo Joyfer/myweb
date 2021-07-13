@@ -1,8 +1,7 @@
 <template>
   <v-hover v-slot="{ hover }">
     <v-card
-      outlined
-      elevation="0"
+      elevation="1"
       height="300"
       v-ripple
       nuxt
@@ -24,7 +23,7 @@
             <v-card-title v-text="title"></v-card-title>
           </div>
         </v-expand-transition>
-        <v-card-title class="d-block d-sm-none" v-text="title"></v-card-title>
+        <v-card-title class="d-block d-sm-none bg-black" v-text="title"></v-card-title>
       </v-img>
     </v-card>
   </v-hover>
@@ -57,5 +56,8 @@ export default {
   justify-content: center;
   position: absolute;
   width: 100%;
+}
+.bg-black{
+  background-color: rgba(22, 22, 22, 0.623);
 }
 </style>

@@ -6,7 +6,7 @@
     >
       {{ title }}
     </h3>
-    <p class="text-body-1 text-justify" v-html="bodyText"></p>
+    <p class="text-body-1 text-justify" v-if="bodyText" v-html="bodyText"></p>
   </div>
 </template>
 
@@ -20,7 +20,7 @@ export default {
     },
     bodyText: {
       type: String,
-      required: true,
+      required: false,
     },
   },
 };
