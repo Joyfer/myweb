@@ -94,19 +94,30 @@ export const state = () => ({
     {
       id: "6",
       name: "React TODO",
+      gitRepo: "https://github.com/Joyfer/todoReact",
       descripcion: `Un TODO (Cosas por hacer), sencillo, creado en React con el Context API como state management y Material UI, con el 
-        poder de guardar cosas en el almacenamiento del navegador siendo así una aplicación funcional`,
-      imagenes: [
-        "https://i.imgur.com/cCIYFMl.png",
-      ],
+        poder de guardar items en el almacenamiento del navegador siendo así una aplicación funcional.`,
+      imagenes: ["https://i.imgur.com/cCIYFMl.png"],
       url: "https://joy-todo-react.netlify.app/",
       caracteristicas: [
         { icon: "react", name: "React" },
-        { icon: "nuxt", name: "Material-UI" },
+        { icon: "material-ui", name: "Material-UI" }
+      ]
+    },
+    {
+      id: "7",
+      name: "Vue 3 / TS TODO",
+      gitRepo: "https://github.com/Joyfer/todo-vue3-ts-twcss",
+      descripcion: `Un TODO (Cosas por hacer), sencillo, creado en Vue 3 (Increíble) con el nuevo sistema Composable y Tailwind CSS, con el 
+        poder de guardar items en el almacenamiento del navegador siendo así una aplicación funcional.`,
+      imagenes: ["https://i.imgur.com/xcwqitg.png", "https://i.imgur.com/zftdWZj.png"],
+      url: "https://joy-todo-vue3.netlify.app/",
+      caracteristicas: [
+        { icon: "vuejs", name: "Vue 3" },
+        { icon: "tailwind", name: "Tailwind CSS" }
       ]
     }
   ],
-  tagFiltrado: ""
 });
 
 export const mutations = {};
