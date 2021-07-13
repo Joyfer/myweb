@@ -1,7 +1,6 @@
 <template>
   <v-app light>
-    <Loading class="loading" v-if="loading"></Loading>
-    <v-main v-show="loading === false">
+    <v-main>
       <div>
         <Navbar />
       </div>
@@ -18,23 +17,11 @@
 <script>
 import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/navbar/Footer";
-import Loading from "../components/loading/loading";
 export default {
   name: "layout",
   components: {
     Navbar,
     Footer,
-    Loading,
-  },
-  data() {
-    return {
-      loading: true,
-    };
-  },
-  mounted() {
-    window.addEventListener("load", () => {
-      this.loading = false;
-    });
   },
 };
 </script>
