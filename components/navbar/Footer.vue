@@ -1,12 +1,8 @@
 <template>
   <v-footer padless>
-    <v-card color="#222" flat tile width="100%" class="text-center">
+    <v-card color="#222" flat tile width="100%" class="text-center py-4">
       <v-card-text>
         <ContactsButtons color="white" />
-      </v-card-text>
-      <v-divider dark></v-divider>
-      <v-card-text class="white--text">
-        {{ new Date().getFullYear() }} — <strong>Vuetify - Joyfer Ramos</strong>
       </v-card-text>
     </v-card>
   </v-footer>
