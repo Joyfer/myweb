@@ -11,6 +11,8 @@
   "dependencies": {
     "core-js": "^3.9.1",
     "nuxt": "^2.15.3",
+    "nuxt-i18n": "^6.27.3",
+    "vue-i18n": "^8.25.0",
     "vue-typer": "^1.2.0"
   },
   "devDependencies": {

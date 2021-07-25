@@ -1,9 +1,10 @@
 <template>
   <div class="full-width">
     <v-card outlined color="primary" dark class="mt-4 pa-3" elevation="6">
-      <ul>
+      <ul class="my-2">
         <li v-for="item in list" :key="item">{{ item }}</li>
       </ul>
+      {{ $t('welcome') }}
     </v-card>
   </div>
 </template>
