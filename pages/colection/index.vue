@@ -3,18 +3,17 @@
     <section>
       <v-row class="mt-10" justify="center">
         <v-col cols="12" sm="10">
-          <TitleAndText
-            title="Proyectos"
-            bodyText="Mi colección de proyectos, la mayoría de ellos son creados por hobby, 
-              si algo te interesa recuerda que puedes comunicarte conmigo sin ningún compromiso, 
-              también si quieres algo personalizado y 
-              está dentro de mis conocimientos estoy al servicio para ti."
-            :header="true"
-          />
+          <TitleAndText title="Proyectos" class="mb-4"
+            ><template v-slot:body
+              >Mi colección de proyectos, la mayoría de ellos son creados por
+              hobby. Si quieres contratarme y
+              está dentro de mis conocimientos estoy al servicio para
+              ti, solo escribeme a alguno de mis contactos.</template
+            ></TitleAndText
+          >
           <Alert
             bodyText="El contenido mostrado a continuación es desarrollado por mí utlizando diferentes librerías y 
-          frameworks. Mis trabajos son 100% personalizados para adaptarse a los requerimientos del proyecto y presupuesto
-          para hacer trabajos más flexibles."
+          frameworks."
             :icon="schoolIcon"
           />
         </v-col>

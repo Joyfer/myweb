@@ -13,13 +13,18 @@
         />
       </v-responsive>
       <v-col class="text-center mx-auto" cols="12" sm="7">
-        <TitleAndText
-          title="Acerca"
-          bodyText="Construido en Vue 2 con Nuxt, utilizando el framework css Vuetify, ilustraciones
-          provistas gratutitamente por <a href='https://undraw.co/' target='_blank'>https://undraw.co/</a>
-          iconos gratuitos por <a href='https://materialdesignicons.com/' target='_blank'>https://materialdesignicons.com/.</a>
-          Diseñado y maquetado por mi persona."
-        />
+        <TitleAndText title="Acerca"
+          ><template v-slot:body
+            >Construido en Vue 2 con Nuxt, utilizando el framework css Vuetify,
+            ilustraciones provistas gratutitamente por
+            <a href="https://undraw.co/" target="_blank">https://undraw.co/</a>
+            iconos gratuitos por
+            <a href="https://materialdesignicons.com/" target="_blank"
+              >https://materialdesignicons.com/.</a
+            >
+            Diseñado y maquetado por mi persona.</template
+          ></TitleAndText
+        >
       </v-col>
     </div>
   </v-row>

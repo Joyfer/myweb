@@ -15,7 +15,7 @@
             ><template v-slot:body
               >Me llamo Joyfer Ramos y soy técnico en informática y me dedico a
               crear páginas y aplicaciones web, siempre motivado y aprendiendo
-              cada día algo nuevo. Visita mis proyectos y no dudes en
+              cada día algo nuevo. Visita mi colección de proyectos y no dudes en
               contactarme.</template
             ></TitleAndText
           >
