@@ -1,13 +1,15 @@
 <template>
-  <div class="d-flex justify-center flex-column full-width text-center">
-    <span class="text-h4 mb-3">¿Pensando en...</span>
+  <div class="text-center mb-3 d-flex flex-column">
+    <span class="text-h2 mb-4">Joyfer Ramos</span>
     <client-only>
-    <vue-typer
-      class="text-h2 text__title-purple mb-3 primary--text pb-3 height"
-      :text="textList"
-      erase-style='select-back'
-      :erase-delay='60'
-    ></vue-typer>
+      <div class="primary rounded elevation-6">
+        <vue-typer
+          class="text-h5"
+          :text="textList"
+          erase-style="select-back"
+          :erase-delay="60"
+        ></vue-typer>
+      </div>
     </client-only>
   </div>
 </template>
@@ -19,10 +21,11 @@ export default {
   data() {
     return {
       textList: [
-        "dominar la web?",
-        "llegar más lejos?",
-        "traspasar fronteras?",
-        "invertir en ti?",
+        "Programador web",
+        "Fullstack",
+        "Javascript - Typescript",
+        "PHP - Laravel",
+        "Vue and React lover",
       ],
     };
   },
@@ -32,6 +35,6 @@ export default {
 
 <style scoped>
 .vue-typer >>> span {
-  color: #6b63ff;
+  color: #fff;
 }
 </style>
