@@ -25,6 +25,7 @@
             Diseñado y maquetado por mi persona.</template
           ></TitleAndText
         >
+        <ChangeLang />
       </v-col>
     </div>
   </v-row>
@@ -32,10 +33,13 @@
 
 <script>
 import TitleAndText from "../components/resources/text/TitleAndText";
+import ChangeLang from "../components/resources/buttons/ChangeLang";
+
 export default {
   name: "about",
   components: {
     TitleAndText,
+    ChangeLang,
   },
   head() {
     return {

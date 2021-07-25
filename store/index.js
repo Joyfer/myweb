@@ -122,7 +122,8 @@ export const state = () => ({
         { icon: "tailwind", name: "Tailwind CSS" }
       ]
     }
-  ]
+  ],
+  lang: ""
 });
 
 export const mutations = {};

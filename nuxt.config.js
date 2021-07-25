@@ -87,18 +87,26 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: ["nuxt-i18n"],
   i18n: {
-    i18n: {
-      locales: ["en", "es"],
-      defaultLocale: "en",
-      vueI18n: {
-        fallbackLocale: "en",
-        messages: {
-          en: {
-            welcome: "Welcome"
-          },
-          es: {
-            welcome: "Bienvenido"
-          }
+    locales: [
+      {
+        code: "en",
+        name: "English"
+      },
+      {
+        code: "es",
+        name: "Español"
+      }
+    ],
+    strategy: 'prefix_except_default',
+    defaultLocale: "en",
+    vueI18n: {
+      fallbackLocale: "en",
+      messages: {
+        en: {
+          welcome: "Welcome"
+        },
+        es: {
+          welcome: "Bienvenido"
         }
       }
     }
