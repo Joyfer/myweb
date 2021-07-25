@@ -7,16 +7,19 @@
         justify="center"
       >
         <v-col class="d-flex flex-column align-center" cols="12" md="6">
-          <TextAnimated />
+          <div class="mb-4">
+            <span class="text-h2 primary--text">¡Bienvenido!</span>
+            <TextAnimated />
+          </div>
           <TitleAndText
             ><template v-slot:body
-              >¡Pues has llegado al sitio correcto! Me llamo Joyfer y soy
-              técnico en informática. Me dedico en crear páginas y aplicaciones
-              web, y en este sitio, encontrarás mi perfil y parte de mi trabajo.
-              No dudes en contactarme, estaré muy complacido de leerte, y si se
-              da la oportunidad, construir algo genial juntos.</template
+              >Me llamo Joyfer Ramos y soy técnico en informática y me dedico a
+              crear páginas y aplicaciones web, siempre motivado y aprendiendo
+              cada día algo nuevo. Visita mis proyectos y no dudes en
+              contactarme.</template
             ></TitleAndText
           >
+          <ChatCard class="mt-5" />
           <div class="full-width d-flex flex-column justify-center mt-4">
             <v-row>
               <v-col cols="12" sm="6">
@@ -37,7 +40,6 @@
                 />
               </v-col>
             </v-row>
-            <ChatCard class="mt-3" />
           </div>
         </v-col>
         <v-col cols="12" md="6" v-show="$vuetify.breakpoint.mdAndUp">
@@ -56,10 +58,11 @@
         </v-col>
       </v-row>
     </section>
-    <section class="mt-15 mt-sm-4" id="texto-hola">
-      <v-row class="align-center justify-center">
-        <v-col cols="12" class="mt-12 mt-sm-0">
-          <v-responsive
+    <section class="mt-15 mt-sm-4" id="texto-hola"></section>
+    <section>
+      <v-row align="center" justify="center" class="flex-column">
+        <v-col cols="12" md="10" lg="7"
+          ><v-responsive
             content-class="my-auto"
             :height="$vuetify.breakpoint.xsOnly ? 220 : 320"
             min-height="100"
@@ -71,29 +74,10 @@
               src="/svg/undraw_Profile_re_4a55.svg"
               lazy-src="/svg/undraw_Profile_re_4a55.svg" /></v-responsive
         ></v-col>
-        <v-col class="text-center" cols="12" md="10" lg="7">
-          <TitleAndText title="¡Hola!">
-            <template v-slot:body
-              >Soy un programador web apasionado por todo lo relacionado con la
-              industria, y actualmente resido en Caracas, Venezuela. Me dedico
-              tiempo completo a programar, y en mi tiempo libre también lo hago
-              o quizá esté jugando algún videojuego... Me encanta el feedback,
-              así que si crees tener algo que podría aportarme, me gustaría leer
-              tu mensaje en alguno de mis contactos que dejo más
-              abajo.</template
-            ></TitleAndText
-          >
-        </v-col>
-      </v-row>
-    </section>
-    <section>
-      <v-row align="center" justify="center" class="flex-column">
         <v-col cols="12" md="10" lg="7">
           <p class="text-justify text-body-1">
-            Nunca pierdo la motivación y las ganas para seguir aprendiendo cada
-            día más, en ayudar a otros programadores y mejorar mis aplicaciones.
-            Es por eso que siempre practico y aprendo diferentes herramientas
-            para llegar a ser un programador completo
+            Actualmente resido en Caracas, Venezuela. Siempre practico y aprendo
+            diferentes herramientas para llegar a ser un programador completo
             <span class="text-h6 text__title-purple primary--text">
               full-stack.</span
             >

@@ -15,7 +15,7 @@
         </v-avatar>
       </v-badge>
 
-      <v-list-item-content class="ml-3">
+      <v-list-item-content class="ml-3 text-left">
         <v-list-item-title>Joyfer Ramos</v-list-item-title>
         <v-list-item-subtitle>Téc.Informático</v-list-item-subtitle>
       </v-list-item-content>

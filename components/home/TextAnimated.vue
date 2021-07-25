@@ -1,15 +1,12 @@
 <template>
-  <div class="text-center mb-6 d-flex flex-column">
-    <span class="text-h2 mb-4">Joyfer Ramos</span>
+  <div class="text-center d-flex flex-column">
     <client-only>
-      <div class="primary rounded elevation-6">
-        <vue-typer
-          class="text-h5"
-          :text="textList"
-          erase-style="select-back"
-          :erase-delay="60"
-        ></vue-typer>
-      </div>
+      <vue-typer
+        class="text-h5"
+        :text="textList"
+        erase-style="select-back"
+        :erase-delay="60"
+      ></vue-typer>
     </client-only>
   </div>
 </template>
@@ -32,9 +29,3 @@ export default {
   methods: {},
 };
 </script>
-
-<style scoped>
-.vue-typer >>> span {
-  color: #fff;
-}
-</style>
