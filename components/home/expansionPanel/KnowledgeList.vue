@@ -34,6 +34,7 @@ export default {
         "HTML5",
         "SASS/SCSS",
         "CSS3",
+        "Responsive design"
       ],
     };
   },
