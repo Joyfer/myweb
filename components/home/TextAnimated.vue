@@ -1,5 +1,5 @@
 <template>
-  <div class="text-center mb-3 d-flex flex-column">
+  <div class="text-center mb-6 d-flex flex-column">
     <span class="text-h2 mb-4">Joyfer Ramos</span>
     <client-only>
       <div class="primary rounded elevation-6">

@@ -9,12 +9,15 @@
         <v-col class="d-flex flex-column align-center" cols="12" md="6">
           <TextAnimated />
           <TitleAndText
-            bodyText="¡Pues has llegado al sitio correcto! Me llamo Joyfer y soy técnico en informática. 
-            Me dedico en crear páginas y aplicaciones web, y en este sitio, encontrarás mi perfil y parte 
-            de mi trabajo. No dudes en contactarme, estaré muy complacido de leerte, y si se da 
-            la oportunidad, construir algo genial juntos."
-          />
-          <div class="full-width d-flex flex-column justify-center">
+            ><template v-slot:body
+              >¡Pues has llegado al sitio correcto! Me llamo Joyfer y soy
+              técnico en informática. Me dedico en crear páginas y aplicaciones
+              web, y en este sitio, encontrarás mi perfil y parte de mi trabajo.
+              No dudes en contactarme, estaré muy complacido de leerte, y si se
+              da la oportunidad, construir algo genial juntos.</template
+            ></TitleAndText
+          >
+          <div class="full-width d-flex flex-column justify-center mt-4">
             <v-row>
               <v-col cols="12" sm="6">
                 <PrimaryButton
@@ -69,14 +72,17 @@
               lazy-src="/svg/undraw_Profile_re_4a55.svg" /></v-responsive
         ></v-col>
         <v-col class="text-center" cols="12" md="10" lg="7">
-          <TitleAndText
-            title="¡Hola!"
-            bodyText="Soy un programador web apasionado por todo lo relacionado con la industria, y actualmente 
-            resido en Caracas, Venezuela. Me dedico tiempo completo a programar, y en mi tiempo libre
-            también lo hago o quizá esté jugando algún videojuego... Me encanta el 
-            feedback, así que si crees tener algo que podría aportarme, me gustaría leer tu mensaje en alguno de 
-            mis contactos que dejo más abajo."
-          />
+          <TitleAndText title="¡Hola!">
+            <template v-slot:body
+              >Soy un programador web apasionado por todo lo relacionado con la
+              industria, y actualmente resido en Caracas, Venezuela. Me dedico
+              tiempo completo a programar, y en mi tiempo libre también lo hago
+              o quizá esté jugando algún videojuego... Me encanta el feedback,
+              así que si crees tener algo que podría aportarme, me gustaría leer
+              tu mensaje en alguno de mis contactos que dejo más
+              abajo.</template
+            ></TitleAndText
+          >
         </v-col>
       </v-row>
     </section>
@@ -115,14 +121,21 @@
               src="/svg/undraw_quick_chat_re_bit5.svg" /></v-responsive
         ></v-col>
         <v-col class="text-center" cols="12" md="10" lg="7">
-          <TitleAndText
-            title="Contáctame"
-            bodyText="Si quieres comunicarte conmigo, puedes hacerlo a través de 
-            <a href='https://t.me/JoyferR' target='_blank'>Telegram</a>, 
-            correo electrónico 
-            <a href='https://mail.google.com/mail/?view=cm&fs=1&to=joyferramos@gmail.com' target='_blank'>joyferramos@gmail.com</a> o 
-            <a href='https://discord.com/app' target='_blank'>Discord</a> id: #6528"
-          />
+          <TitleAndText title="Contáctame"
+            ><template v-slot:body
+              >Si quieres comunicarte conmigo, puedes hacerlo a través de
+              <a href="https://t.me/JoyferR" target="_blank">Telegram</a>,
+              correo electrónico
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=joyferramos@gmail.com"
+                target="_blank"
+                >joyferramos@gmail.com</a
+              >
+              o
+              <a href="https://discord.com/app" target="_blank">Discord</a> id:
+              #6528</template
+            ></TitleAndText
+          >
         </v-col>
       </v-row>
     </section>

@@ -1,12 +1,9 @@
 <template>
   <div>
-    <h3
-      v-if="title"
-      class="text-h3 text__title-purple mb-6 primary--text text-center"
-    >
-      {{ title }}
-    </h3>
-    <p class="text-body-1 text-justify" v-if="bodyText" v-html="bodyText"></p>
+    <div v-if="title" class="text-h3 text__title-purple mb-6 primary--text text-center">
+      {{title}}
+    </div>
+    <div class="text-body-1 text-justify"><slot name="body"></slot></div>
   </div>
 </template>
 
@@ -15,10 +12,6 @@ export default {
   name: "TitleAndText",
   props: {
     title: {
-      type: String,
-      required: false,
-    },
-    bodyText: {
       type: String,
       required: false,
     },
