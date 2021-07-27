@@ -6,7 +6,13 @@
       </v-icon>
     </v-btn>
     <div class="text-center">
-      <v-menu open-on-hover bottom offset-y eager>
+      <v-menu
+        open-on-hover
+        bottom
+        offset-y
+        rounded
+        transition="scroll-x-reverse-transition"
+      >
         <template v-slot:activator="{ on, attrs }">
           <v-btn :color="colors" icon dark v-bind="attrs" v-on="on">
             <v-icon dark>
