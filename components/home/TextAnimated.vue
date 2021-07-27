@@ -3,6 +3,7 @@
     <client-only>
       <vue-typer
         class="text-h5"
+        :class="$vuetify.theme.dark === true ? 'dynamic-color' : ''"
         :text="textList"
         erase-style="select-back"
         :erase-delay="60"
@@ -26,6 +27,11 @@ export default {
       ],
     };
   },
-  methods: {},
 };
 </script>
+
+<style scoped>
+.dynamic-color >>> span{
+  color: white;
+}
+</style>
