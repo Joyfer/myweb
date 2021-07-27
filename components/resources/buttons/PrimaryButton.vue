@@ -10,7 +10,7 @@
     class=""
     :large="large"
     :nuxt="typeof nuxtLink === 'string'"
-    :to="nuxtLink"
+    :to="localePath(nuxtLink)"
     :href="href"
     :target="href ? '_blank' : undefined"
     :tile="outlined"

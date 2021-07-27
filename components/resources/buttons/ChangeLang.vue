@@ -22,8 +22,9 @@
           >
             <nuxt-link
               :to="switchLocalePath(locale.code)"
-              :class="`${colors}--text`"
-              >{{ locale.name }}</nuxt-link
+              :class="`${colors}--text text-decoration-none`"
+            >
+              {{ locale.name }}</nuxt-link
             >
           </v-list-item>
         </v-list>
@@ -34,12 +35,13 @@
 
 <script>
 import { mdiTranslate } from "@mdi/js";
+
 export default {
   name: "ChangeLangButton",
   data() {
     return {
       mdiTranslate,
-      preloaded: true
+      preloaded: true,
     };
   },
   computed: {
@@ -54,7 +56,7 @@ export default {
       }
     },
   },
-  mounted () {
+  mounted() {
     this.preloaded = false;
   },
 };

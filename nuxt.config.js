@@ -98,7 +98,7 @@ export default {
       }
     ],
     strategy: 'prefix_except_default',
-    defaultLocale: "en",
+    defaultLocale: "es",
     vueI18n: {
       fallbackLocale: "en",
       messages: {
