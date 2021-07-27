@@ -8,12 +8,12 @@
       >
         <v-col class="d-flex flex-column align-center" cols="12" md="6">
           <div class="mb-4">
-            <span class="text-h2 primary--text">¡Bienvenido!</span>
+            <span class="text-h2 primary--text">Joyfer Ramos</span>
             <TextAnimated />
           </div>
           <TitleAndText
             ><template v-slot:body
-              >Me llamo Joyfer Ramos y soy técnico en informática y me dedico a
+              >Soy técnico en informática y me dedico a
               crear páginas y aplicaciones web, siempre motivado y aprendiendo
               cada día algo nuevo. Visita mi colección de proyectos y no dudes en
               contactarme.</template
