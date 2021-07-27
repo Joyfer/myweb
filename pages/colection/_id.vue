@@ -55,8 +55,8 @@ import Carousel from "../../components/colection/carousel/Carousel";
 import Alert from "../../components/resources/alert/Alert";
 import List from "../../components/colection/list/List";
 import PrimaryButton from "../../components/resources/buttons/PrimaryButton";
+import projects from "/static/projects.js";
 
-import { mapState } from "vuex";
 export default {
   name: "projectDetails",
   components: {
@@ -65,10 +65,14 @@ export default {
     List,
     PrimaryButton,
   },
+  data() {
+    return {
+      projects
+    }
+  },
   computed: {
-    ...mapState(["proyectos"]),
     filtrado: function () {
-      return this.proyectos.filter((el) => el.id === this.$route.params.id);
+      return this.projects.filter((el) => el.id === this.$route.params.id);
     },
   },
   head() {

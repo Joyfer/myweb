@@ -6,9 +6,9 @@
           <TitleAndText title="Proyectos" class="mb-4"
             ><template v-slot:body
               >Mi colección de proyectos, la mayoría de ellos son creados por
-              hobby. Si quieres contratarme y
-              está dentro de mis conocimientos estoy al servicio para
-              ti, solo escribeme a alguno de mis contactos.</template
+              hobby. Si quieres contratarme y está dentro de mis conocimientos
+              estoy al servicio para ti, solo escribeme a alguno de mis
+              contactos.</template
             ></TitleAndText
           >
           <Alert
@@ -22,7 +22,7 @@
         <v-col cols="12" sm="10">
           <v-row dense>
             <v-col
-              v-for="{ id, name, imagenes } in regularProjects"
+              v-for="{ id, name, imagenes } in regularProjects()"
               :key="id"
               cols="12"
               sm="6"
@@ -42,7 +42,7 @@
         <v-col cols="12" sm="10">
           <v-row dense>
             <v-col
-              v-for="{ id, name, imagenes } in gameZoneProjects"
+              v-for="{ id, name, imagenes } in gameZoneProjects()"
               :key="id"
               cols="12"
               sm="6"
@@ -61,7 +61,7 @@
 import TitleAndText from "../../components/resources/text/TitleAndText";
 import Alert from "../../components/resources/alert/Alert";
 import CardProject from "../../components/colection/listCards/CardProject";
-import { mapState } from "vuex";
+import projects from "/static/projects.js";
 
 import { mdiSchool } from "@mdi/js";
 export default {
@@ -74,15 +74,15 @@ export default {
   data() {
     return {
       schoolIcon: mdiSchool,
+      projects,
     };
   },
-  computed: {
-    ...mapState(["proyectos"]),
+  methods: {
     regularProjects() {
-      return this.proyectos.filter((el) => el.gameZone === undefined);
+      return this.projects.filter((el) => el.gameZone === undefined);
     },
     gameZoneProjects() {
-      return this.proyectos.filter((el) => el.gameZone === true);
+      return this.projects.filter((el) => el.gameZone === true);
     },
   },
   head() {
