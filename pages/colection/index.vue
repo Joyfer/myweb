@@ -32,7 +32,7 @@
       </v-row>
       <v-row class="mt-10" justify="center">
         <v-col cols="12" sm="10">
-          <TitleAndText title="Zona de juego" />
+          <TitleAndText :title="$t('gameZone')" />
         </v-col>
       </v-row>
       <v-row class="px-0" justify="center">

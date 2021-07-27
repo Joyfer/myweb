@@ -15,6 +15,7 @@ export default {
   projectsTitle: `Projects`,
   projectsTextHead: `My collection of projects, most of them are created by hobby. If you want to hire me and I have the
   necessary knowledge that I am at the service for you, just write to one of my contacts.`,
+  gameZone: "Game zone",
   projectAlertHead: `The content shown below is developed by me using different libraries and frameworks.`,
   projectButtonVisitWeb: `Visit!`,
   projectButtonEmail: `Send me an email`,
