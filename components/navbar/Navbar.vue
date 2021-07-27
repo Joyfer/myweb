@@ -30,7 +30,7 @@
             v-for="({ sectionName, icon, link }, index) in sections"
             :key="index"
             nuxt
-            :to="`/${link}`"
+            :to="localePath(link)"
             class="link__remove-underline"
           >
             <v-list-item-title>{{ sectionName }}</v-list-item-title>
@@ -69,7 +69,7 @@ export default {
     return {
       menuIcon: mdiMenu,
       sections: [
-        { icon: mdiAccount, sectionName: "Sobre mí", link: "" },
+        { icon: mdiAccount, sectionName: "Sobre mí", link: "/" },
         { icon: mdiFolderHeart, sectionName: "Colección", link: "colection" },
         { icon: mdiCommentQuestion, sectionName: "Acerca", link: "about" },
       ],
