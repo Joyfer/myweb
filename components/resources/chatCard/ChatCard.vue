@@ -17,11 +17,11 @@
 
       <v-list-item-content class="ml-3 text-left">
         <v-list-item-title>Joyfer Ramos</v-list-item-title>
-        <v-list-item-subtitle>Téc.Informático</v-list-item-subtitle>
+        <v-list-item-subtitle>{{ $t('It') }}</v-list-item-subtitle>
       </v-list-item-content>
       <v-list-item-action v-show="$vuetify.breakpoint.smAndUp">
         <PrimaryButton
-          text="Envíame un mensaje"
+          :text="$t('sendMeAMessage')"
           :icon="telegramIcon"
           textButton
         />

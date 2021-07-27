@@ -13,10 +13,7 @@
           </div>
           <TitleAndText
             ><template v-slot:body
-              >Soy técnico en informática y me dedico a
-              crear páginas y aplicaciones web, siempre motivado y aprendiendo
-              cada día algo nuevo. Visita mi colección de proyectos y no dudes en
-              contactarme.</template
+              >{{ $t('welcome') }}</template
             ></TitleAndText
           >
           <ChatCard class="mt-5" />
@@ -24,7 +21,7 @@
             <v-row>
               <v-col cols="12" sm="6">
                 <PrimaryButton
-                  text="Ver perfil"
+                  :text="$t('seeProfileButton')"
                   :icon="AccountIcon"
                   :outlined="true"
                   class="full-width"
@@ -33,7 +30,7 @@
                 /> </v-col
               ><v-col cols="12" sm="6">
                 <PrimaryButton
-                  text="Ver colección"
+                  :text="$t('seeProjectsButton')"
                   :icon="FolderIcon"
                   class="full-width"
                   nuxtLink="/colection"
@@ -76,12 +73,7 @@
         ></v-col>
         <v-col cols="12" md="10" lg="7">
           <p class="text-justify text-body-1">
-            Actualmente resido en Caracas, Venezuela. Siempre practico y aprendo
-            diferentes herramientas para llegar a ser un programador completo
-            <span class="text-h6 text__title-purple primary--text">
-              full-stack.</span
-            >
-            Actualmente trabajo y sigo mejorando en:
+            {{ $t('aboutMe') }}
           </p>
         </v-col>
         <CardsTools />
@@ -105,17 +97,17 @@
               src="/svg/undraw_quick_chat_re_bit5.svg" /></v-responsive
         ></v-col>
         <v-col class="text-center" cols="12" md="10" lg="7">
-          <TitleAndText title="Contáctame"
+          <TitleAndText :title="$t('contactMeTitle')"
             ><template v-slot:body
-              >Si quieres comunicarte conmigo, puedes hacerlo a través de
+              >{{ $t('contactMe') }}
               <a href="https://t.me/JoyferR" target="_blank">Telegram</a>,
-              correo electrónico
+              email:
               <a
                 href="https://mail.google.com/mail/?view=cm&fs=1&to=joyferramos@gmail.com"
                 target="_blank"
-                >joyferramos@gmail.com</a
+                >joyferramos@gmail.com,</a
               >
-              o
+              
               <a href="https://discord.com/app" target="_blank">Discord</a> id:
               #6528</template
             ></TitleAndText

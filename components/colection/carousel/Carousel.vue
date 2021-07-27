@@ -10,10 +10,6 @@
       >
       </v-carousel-item>
     </v-carousel>
-    <p class="text-caption mt-2">
-      <v-icon left>mdi-fullscreen</v-icon>Clic en la imagen para ver pantalla
-      completa
-    </p>
   </div>
 </template>
 

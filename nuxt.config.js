@@ -90,26 +90,19 @@ export default {
     locales: [
       {
         code: "en",
+        file: 'en-US.js',
         name: "English"
       },
       {
         code: "es",
+        file: 'es-ES.js',
         name: "Español"
       }
     ],
     strategy: 'prefix_except_default',
     defaultLocale: "es",
-    vueI18n: {
-      fallbackLocale: "en",
-      messages: {
-        en: {
-          welcome: "Welcome"
-        },
-        es: {
-          welcome: "Bienvenido"
-        }
-      }
-    }
+    lazy: true,
+    langDir: 'lang/',
   },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify

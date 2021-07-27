@@ -24,14 +24,14 @@
               class="mx-1 mb-1 mb-sm-0"
               outlined
               :href="filtrado[0].url"
-              text="¡Visitar!"
+              :text="$t('projectButtonVisitWeb')"
               icon="mdi-web"
               :header="true"
             ></PrimaryButton>
             <PrimaryButton
               class="mx-1 mb-1 mb-sm-0"
               href="https://mail.google.com/mail/?view=cm&fs=1&to=joyferramos@gmail.com"
-              text="Envíame un correo"
+              :text="$t('projectButtonEmail')"
               icon="mdi-gmail"
             ></PrimaryButton>
             <v-btn
@@ -44,11 +44,11 @@
               ><v-icon>mdi-github</v-icon></v-btn
             >
           </div>
-          <Alert
-            v-if="filtrado[0].heroku"
-            icon="mdi-clock-alert"
-            bodyText="Esta aplicación está subida a Heroku, lo que hará que tarde un poco en iniciar la primera vez."
-          />
+          <Alert v-if="filtrado[0].heroku" icon="mdi-clock-alert"
+            ><template v-slot:body
+              >{{$t('projectAlertHeroku')}}</template
+            ></Alert
+          >
           <List :characteristic="filtrado[0].caracteristicas"></List>
         </v-col>
       </v-row>

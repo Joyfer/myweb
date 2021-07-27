@@ -3,19 +3,16 @@
     <section>
       <v-row class="mt-10" justify="center">
         <v-col cols="12" sm="10">
-          <TitleAndText title="Proyectos" class="mb-4"
-            ><template v-slot:body
-              >Mi colección de proyectos, la mayoría de ellos son creados por
-              hobby. Si quieres contratarme y está dentro de mis conocimientos
-              estoy al servicio para ti, solo escribeme a alguno de mis
-              contactos.</template
-            ></TitleAndText
+          <TitleAndText :title="$t('projectsTitle')" class="mb-4"
+            ><template v-slot:body>{{
+              $t("projectsTextHead")
+            }}</template></TitleAndText
           >
-          <Alert
-            bodyText="El contenido mostrado a continuación es desarrollado por mí utlizando diferentes librerías y 
-          frameworks."
-            :icon="schoolIcon"
-          />
+          <Alert :icon="schoolIcon"
+            ><template v-slot:body>{{
+              $t("projectAlertHead")
+            }}</template></Alert
+          >
         </v-col>
       </v-row>
       <v-row class="px-0" justify="center">

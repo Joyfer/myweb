@@ -5,8 +5,8 @@
         ><v-icon>{{ menuIcon }}</v-icon></v-app-bar-nav-icon
       >
       <PrimaryButton
-        v-for="({ sectionName, icon, link }, index) in sections"
-        :text="sectionName"
+        v-for="({ icon, link }, index) in sections"
+        :text="getSectionName(index)"
         :textButton="true"
         :icon="icon"
         :class="`${indexMargin(index)} d-none d-sm-flex`"
@@ -27,13 +27,13 @@
       <v-list nav dense>
         <v-list-item-group v-model="group" active-class="text--accent-4">
           <v-list-item
-            v-for="({ sectionName, icon, link }, index) in sections"
+            v-for="({ icon, link }, index) in sections"
             :key="index"
             nuxt
             :to="localePath(link)"
             class="link__remove-underline"
           >
-            <v-list-item-title>{{ sectionName }}</v-list-item-title>
+            <v-list-item-title>{{ getSectionName(index) }}</v-list-item-title>
             <v-list-item-icon
               ><v-icon>{{ icon }}</v-icon></v-list-item-icon
             >
@@ -69,12 +69,13 @@ export default {
     return {
       menuIcon: mdiMenu,
       sections: [
-        { icon: mdiAccount, sectionName: "Sobre mí", link: "/" },
-        { icon: mdiFolderHeart, sectionName: "Colección", link: "colection" },
-        { icon: mdiCommentQuestion, sectionName: "Acerca", link: "about" },
+        { icon: mdiAccount, link: "/" },
+        { icon: mdiFolderHeart, link: "colection" },
+        { icon: mdiCommentQuestion, link: "about" },
       ],
       drawer: false,
       group: null,
+      idk: this.$t("aboutMeNav")
     };
   },
   watch: {
@@ -90,6 +91,15 @@ export default {
         return "mx-1";
       }
     },
+    getSectionName(el) {
+      if (el === 0) {
+        return this.$t("aboutMeNav")
+      } else if (el === 1) {
+        return this.$t("projectsNav")
+      } else if (el === 2) {
+        return this.$t("about")
+      }
+    }
   },
 };
 </script>

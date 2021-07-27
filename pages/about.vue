@@ -13,19 +13,11 @@
         />
       </v-responsive>
       <v-col class="text-center mx-auto" cols="12" sm="7">
-        <TitleAndText title="Acerca"
-          ><template v-slot:body
-            >Construido en Vue 2 con Nuxt, utilizando el framework css Vuetify,
-            ilustraciones provistas gratutitamente por
-            <a href="https://undraw.co/" target="_blank">https://undraw.co/</a>
-            iconos gratuitos por
-            <a href="https://materialdesignicons.com/" target="_blank"
-              >https://materialdesignicons.com/.</a
-            >
-            Diseñado y maquetado por mi persona.</template
+        <TitleAndText :title="$t('about')"
+          ><template v-slot:body 
+            ><div v-html="$t(`aboutText`)"></div></template
           ></TitleAndText
         >
-        <ChangeLang />
       </v-col>
     </div>
   </v-row>
@@ -33,13 +25,11 @@
 
 <script>
 import TitleAndText from "../components/resources/text/TitleAndText";
-import ChangeLang from "../components/resources/buttons/ChangeLang";
 
 export default {
   name: "about",
   components: {
     TitleAndText,
-    ChangeLang,
   },
   head() {
     return {

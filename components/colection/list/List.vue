@@ -1,6 +1,6 @@
 <template>
   <v-card outlined color="primary">
-    <v-subheader class="white--text"> Caracteristicas </v-subheader>
+    <v-subheader class="white--text">{{$t('characteristics')}}</v-subheader>
     <v-list>
       <template v-for="({ name, icon }, index) in characteristic">
         <v-divider v-if="index != 0" :key="index" inset></v-divider>
