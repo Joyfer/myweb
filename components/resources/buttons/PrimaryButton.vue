@@ -14,6 +14,7 @@
     :href="href"
     :target="href ? '_blank' : undefined"
     :tile="outlined"
+    exact
   >
     {{ text }}
     <v-icon v-if="icon" right> {{ icon }} </v-icon>
