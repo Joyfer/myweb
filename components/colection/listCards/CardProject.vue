@@ -5,7 +5,7 @@
       height="300"
       v-ripple
       nuxt
-      :to="`/colection/${id}`"
+      :to="localePath(`/colection/${id}`)"
     >
       <v-img
         :src="image"

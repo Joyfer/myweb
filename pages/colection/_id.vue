@@ -2,7 +2,13 @@
   <div>
     <v-container>
       <v-row>
-        <v-btn to="/colection" nuxt icon color="primary" class="ml-2">
+        <v-btn
+          :to="localePath(`/colection`)"
+          nuxt
+          icon
+          color="primary"
+          class="ml-2"
+        >
           <v-icon>mdi-arrow-left-thick</v-icon>
         </v-btn>
       </v-row>
@@ -67,8 +73,8 @@ export default {
   },
   data() {
     return {
-      projects
-    }
+      projects,
+    };
   },
   computed: {
     filtrado: function () {
