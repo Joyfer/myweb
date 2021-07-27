@@ -1,7 +1,7 @@
 <template>
   <v-hover v-slot="{ hover }">
     <v-card
-      elevation="1"
+      elevation="4"
       height="300"
       v-ripple
       nuxt
