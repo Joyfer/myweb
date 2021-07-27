@@ -7,7 +7,7 @@
     <v-icon v-if="this.$vuetify.theme.dark">{{ sunIcon }}</v-icon>
     <v-icon v-else>{{ moonIcon }}</v-icon>
   </v-btn>
-</template>df
+</template>
 
 <script>
 import { mdiWhiteBalanceSunny, mdiWeatherNight } from "@mdi/js";
