@@ -18,6 +18,7 @@
       <v-spacer></v-spacer>
       <div class="d-flex align-center">
         <DarkLight />
+        <ChangeLangButton />
         <v-divider vertical class="mx-2"></v-divider>
         <ContactsButtons />
       </div>
@@ -47,6 +48,7 @@
 import PrimaryButton from "../resources/buttons/PrimaryButton";
 import DarkLight from "../resources/buttons/DarkLight";
 import ContactsButtons from "../resources/buttons/Contacts";
+import ChangeLangButton from "../resources/buttons/ChangeLang";
 
 import {
   mdiAccount,
@@ -61,6 +63,7 @@ export default {
     PrimaryButton,
     ContactsButtons,
     DarkLight,
+    ChangeLangButton,
   },
   data() {
     return {
