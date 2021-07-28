@@ -1,5 +1,12 @@
 <template>
-  <v-card class="" outlined width="100%" href="https://t.me/JoyferR" target="_blank">
+  <v-card
+    class=""
+    outlined
+    width="100%"
+    href="https://t.me/JoyferR"
+    target="_blank"
+    color="primary" dark elevation="5"
+      >
     <v-list-item two-line>
       <v-badge
         bordered
@@ -17,14 +24,12 @@
 
       <v-list-item-content class="ml-3 text-left">
         <v-list-item-title>Joyfer Ramos</v-list-item-title>
-        <v-list-item-subtitle>{{ $t('It') }}</v-list-item-subtitle>
+        <v-list-item-subtitle>{{ $t("It") }}</v-list-item-subtitle>
       </v-list-item-content>
       <v-list-item-action v-show="$vuetify.breakpoint.smAndUp">
-        <PrimaryButton
-          :text="$t('sendMeAMessage')"
-          :icon="telegramIcon"
-          textButton
-        />
+        <v-btn plain
+          >{{$t('sendMeAMessage')}}<v-icon right>{{ telegramIcon }}</v-icon></v-btn
+        >
       </v-list-item-action>
     </v-list-item>
   </v-card>

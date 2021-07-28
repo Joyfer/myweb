@@ -14,9 +14,9 @@
           <TitleAndText
             ><template v-slot:body>{{ $t("welcome") }}</template></TitleAndText
           >
-          <ChatCard class="mt-5" />
-          <div class="full-width d-flex flex-column justify-center mt-4">
-            <v-row>
+
+          <div class="full-width d-flex flex-column justify-center">
+            <v-row class="my-3">
               <v-col cols="12" sm="6">
                 <PrimaryButton
                   :text="$t('seeProfileButton')"
@@ -35,6 +35,7 @@
                 />
               </v-col>
             </v-row>
+            <ChatCard />
           </div>
         </v-col>
         <v-col cols="12" md="6" v-show="$vuetify.breakpoint.mdAndUp">
