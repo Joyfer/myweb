@@ -34,21 +34,15 @@ export default {
 .text__title-purple {
   font-family: "Fredoka One", cursive !important;
 }
-.loading {
-  background: rgb(75, 65, 204);
-  background: linear-gradient(
-    180deg,
-    rgba(47, 39, 172, 1) 0%,
-    rgba(29, 25, 106, 1) 100%
-  );
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  color: white;
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.3s;
 }
+.page-enter,
+.page-leave-active {
+  opacity: 0;
+}
+
 .full-width {
   width: 100%;
 }

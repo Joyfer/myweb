@@ -12,9 +12,7 @@
             <TextAnimated />
           </div>
           <TitleAndText
-            ><template v-slot:body
-              >{{ $t('welcome') }}</template
-            ></TitleAndText
+            ><template v-slot:body>{{ $t("welcome") }}</template></TitleAndText
           >
           <ChatCard class="mt-5" />
           <div class="full-width d-flex flex-column justify-center mt-4">
@@ -73,7 +71,7 @@
         ></v-col>
         <v-col cols="12" md="10" lg="7">
           <p class="text-justify text-body-1">
-            {{ $t('aboutMe') }}
+            {{ $t("aboutMe") }}
           </p>
         </v-col>
         <CardsTools />
@@ -99,7 +97,7 @@
         <v-col class="text-center" cols="12" md="10" lg="7">
           <TitleAndText :title="$t('contactMeTitle')"
             ><template v-slot:body
-              >{{ $t('contactMe') }}
+              >{{ $t("contactMe") }}
               <a href="https://t.me/JoyferR" target="_blank">Telegram</a>,
               email:
               <a
@@ -107,7 +105,7 @@
                 target="_blank"
                 >joyferramos@gmail.com,</a
               >
-              
+
               <a href="https://discord.com/app" target="_blank">Discord</a> id:
               #6528</template
             ></TitleAndText

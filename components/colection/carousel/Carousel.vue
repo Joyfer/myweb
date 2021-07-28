@@ -32,6 +32,6 @@ export default {
 <style scoped>
 .fixed{
   position: sticky;
-  top: 10%
+  top: 10%;
 }
 </style>
