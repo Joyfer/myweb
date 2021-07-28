@@ -5,9 +5,10 @@
         <v-btn
           :to="localePath(`/colection`)"
           nuxt
-          icon
+        fab small
           color="primary"
           class="ml-2"
+          elevation="6"
         >
           <v-icon>mdi-arrow-left-thick</v-icon>
         </v-btn>
