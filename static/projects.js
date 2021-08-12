@@ -16,6 +16,7 @@ const projects = [
       { icon: "nodejs", name: "Nodejs" },
       { icon: "language-javascript", name: "Javascript" },
       { icon: "bootstrap", name: "Bootstrap 4.5" },
+      { icon: "server", name: "Express" },
       { icon: "web", name: "Socket.io" },
       { icon: "language-html5", name: "Templates EJS" }
     ]
@@ -151,7 +152,7 @@ const projects = [
     gameZone: true,
     name: "Crowdfunding | Frontend Mentor",
     gitRepo: "https://github.com/Joyfer/crowdfunding-product",
-    descripcion: `Prueba de Frontend mentor, donde uso Vue 3 con Typescript y ViteJS. Y hago creación
+    descripcion: `Prueba de Frontend mentor, donde uso Vue 3 con Typescript y Vite, Y hago creación
     de varios composables functions.`,
     imagenes: [
       "https://i.imgur.com/FgbX2FR.png",
