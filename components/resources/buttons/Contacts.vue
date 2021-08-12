@@ -7,6 +7,7 @@
       :color="$vuetify.theme.dark === true ? 'white' : color"
       :href="link"
       target="_blank"
+      rel="noopener"
     >
       <v-icon dark> {{ icon }} </v-icon></v-btn
     >

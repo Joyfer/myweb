@@ -42,6 +42,7 @@
               v-if="filtrado[0].gitRepo"
               :href="filtrado[0].gitRepo"
               target="_blank"
+              rel="noopener"
               ><v-icon>mdi-github</v-icon></v-btn
             >
           </div>
