@@ -1,5 +1,5 @@
 <template>
-  <v-alert text outlined color="primary" :icon="icon">
+  <v-alert text outlined :color="$vuetify.theme.dark === true ? 'white' : 'primary'" :icon="icon">
     <span><slot name="body"></slot></span>
   </v-alert>
 </template>
