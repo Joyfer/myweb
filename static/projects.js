@@ -82,7 +82,7 @@ const projects = [
     id: "5",
     name: "Let's play tgther 2",
     descripcion:
-      "Let's play tgther 2, usando un cliente JAMStack con Nuxt y un servidor en NodeJS",
+      "Let's play tgther 2, usando un cliente JAMStack con Nuxt y servidor en NodeJS.",
     imagenes: [
       "https://i.imgur.com/zXUS0TN.png",
       "https://i.imgur.com/WtLd7FT.png"
@@ -152,7 +152,7 @@ const projects = [
     gameZone: true,
     name: "Crowdfunding | Frontend Mentor",
     gitRepo: "https://github.com/Joyfer/crowdfunding-product",
-    descripcion: `Prueba de Frontend mentor, donde uso Vue 3 con Typescript y Vite, Y hago creación
+    descripcion: `Prueba de Frontend mentor, donde uso Vue 3 con Typescript y Vite, también hago creación
     de varios composables functions.`,
     imagenes: [
       "https://i.imgur.com/FgbX2FR.png",
