@@ -24,5 +24,6 @@ export default {
   aboutText: `Built with Vue 2 and Nuxt, using the css framework Vuetify,
   free illustrations by <a href="https://undraw.co/" target="_blank">https://undraw.co/</a>
   free icons by <a href="https://materialdesignicons.com/" target="_blank">
-  https://materialdesignicons.com/.</a> Designed and developed by myself.`
+  https://materialdesignicons.com/.</a> Designed and developed by myself.`,
+  seeCurriculum: 'See curriculum'
 };

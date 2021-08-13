@@ -1,12 +1,5 @@
 <template>
-  <v-card
-    class=""
-    outlined
-    width="100%"
-    href="https://t.me/JoyferR"
-    target="_blank"
-    color="primary" dark elevation="5"
-      >
+  <v-card class="pa-2" outlined width="100%" elevation="5">
     <v-list-item two-line>
       <v-badge
         bordered
@@ -27,27 +20,36 @@
         <v-list-item-subtitle>{{ $t("It") }}</v-list-item-subtitle>
       </v-list-item-content>
       <v-list-item-action v-show="$vuetify.breakpoint.smAndUp">
-        <v-btn plain
-          >{{$t('sendMeAMessage')}}<v-icon right>{{ telegramIcon }}</v-icon></v-btn
+        <v-btn plain href="https://t.me/JoyferR" target="_blank"
+          >{{ $t("sendMeAMessage")
+          }}<v-icon right>{{ telegramIcon }}</v-icon></v-btn
         >
       </v-list-item-action>
     </v-list-item>
+    <PrimaryButton
+      :text="$t('seeCurriculum')"
+      :icon="linkIcon"
+      class="full-width"
+       href="/curriculum.pdf"
+      textButton
+    />
   </v-card>
 </template>
 
 <script>
 import PrimaryButton from "~/components/resources/buttons/PrimaryButton";
-import { mdiTelegram } from "@mdi/js";
+import { mdiTelegram, mdiLink } from "@mdi/js";
 export default {
   name: "ChatCard",
   components: {
-    PrimaryButton,
+    PrimaryButton
   },
   data() {
     return {
       telegramIcon: mdiTelegram,
+      linkIcon: mdiLink
     };
-  },
+  }
 };
 </script>
 

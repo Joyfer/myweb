@@ -3,7 +3,7 @@
     :color="
       $vuetify.theme.dark === true && header === true
         ? 'white'
-        : 'primary'
+        : color
     "
     :outlined="outlined"
     :text="textButton"

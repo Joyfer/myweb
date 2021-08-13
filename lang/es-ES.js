@@ -27,5 +27,6 @@ export default {
   ilustraciones provistas gratutitamente por
   <a href="https://undraw.co/" target="_blank">https://undraw.co/</a> iconos gratuitos por
   <a href="https://materialdesignicons.com/" target="_blank">https://materialdesignicons.com/.</a>
-  Diseñado y maquetado por mi persona.`
+  Diseñado y maquetado por mi persona.`,
+  seeCurriculum: 'Ver curriculum'
 };

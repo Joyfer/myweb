@@ -14,7 +14,6 @@
           <TitleAndText
             ><template v-slot:body>{{ $t("welcome") }}</template></TitleAndText
           >
-
           <div class="full-width d-flex flex-column justify-center">
             <v-row class="my-3">
               <v-col cols="12" sm="6">
@@ -40,7 +39,6 @@
         </v-col>
         <v-col cols="12" md="6" v-show="$vuetify.breakpoint.mdAndUp">
           <v-img
-            eager
             max-height="400"
             max-width="500"
             class="mx-auto"
@@ -68,7 +66,7 @@
               max-height="320"
               max-width="570"
               src="/svg/undraw_Profile_re_4a55.svg"
-              lazy-src="/svg/undraw_Profile_re_4a55.svg" /></v-responsive
+              lazy-src="/svg/undraw_Profile_re_4a55.svg"/></v-responsive
         ></v-col>
         <v-col cols="12" md="10" lg="7">
           <p class="text-justify text-body-1">
@@ -93,7 +91,7 @@
               class="mx-auto mt-15"
               max-height="320"
               max-width="570"
-              src="/svg/undraw_quick_chat_re_bit5.svg" /></v-responsive
+              src="/svg/undraw_quick_chat_re_bit5.svg"/></v-responsive
         ></v-col>
         <v-col class="text-center" cols="12" md="10" lg="7">
           <TitleAndText :title="$t('contactMeTitle')"
@@ -115,7 +113,7 @@
       </v-row>
     </section>
   </main>
-</template> 
+</template>
 
 <script>
 import TitleAndText from "../components/resources/text/TitleAndText";
@@ -134,28 +132,28 @@ export default {
     CardsTools,
     TextAnimated,
     ChatCard,
-    KnowledgeList,
+    KnowledgeList
   },
   data() {
     return {
       AccountIcon: mdiAccountOutline,
       FolderIcon: mdiFolderHeart,
-      ArrowDownicon: mdiArrowDownBold,
+      ArrowDownicon: mdiArrowDownBold
     };
   },
   methods: {
     move() {
       this.$vuetify.goTo("#texto-hola", {
         duration: 300,
-        easing: "easeInOutCubic",
+        easing: "easeInOutCubic"
       });
-    },
+    }
   },
-    head() {
+  head() {
     return {
-      title: "Index",
+      title: "Index"
     };
-  },
+  }
 };
 </script>
 
