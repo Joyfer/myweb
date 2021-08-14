@@ -22,7 +22,7 @@ export default {
         hid: "description",
         name: "description",
         content:
-          "Mi página personal donde podras encontrar mi perfil, datos, proyectos, intereses y mi lista de contactos."
+          "Mi página personal donde podras encontrar mi perfil, datos, proyectos, intereses."
       },
       {
         name: "keywords",
@@ -31,7 +31,25 @@ export default {
       {
         name: "robots",
         content: "index"
-      }
+      },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://joyferr-web.netlify.app/" },
+      { property: "og:title", content: "Joyfer Web" },
+      {
+        property: "og:description",
+        content:
+          "Mi página personal donde podras encontrar mi perfil, datos, proyectos, intereses."
+      },
+      { property: "og:image", content: "https://i.imgur.com/OzHRVNV.png" },
+      { property: "twitter:card", content: "summary_large_image" },
+      { property: "twitter:url", content: "https://joyferr-web.netlify.app/" },
+      { property: "twitter:title", content: "Joyfer Web" },
+      {
+        property: "twitter:description",
+        content:
+          "Mi página personal donde podras encontrar mi perfil, datos, proyectos, intereses."
+      },
+      { property: "twitter:image", content: "https://i.imgur.com/OzHRVNV.png" }
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
@@ -90,19 +108,19 @@ export default {
     locales: [
       {
         code: "en",
-        file: 'en-US.js',
+        file: "en-US.js",
         name: "English"
       },
       {
         code: "es",
-        file: 'es-ES.js',
+        file: "es-ES.js",
         name: "Español"
       }
     ],
-    strategy: 'prefix_except_default',
+    strategy: "prefix_except_default",
     defaultLocale: "es",
     lazy: true,
-    langDir: 'lang/',
+    langDir: "lang/"
   },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
