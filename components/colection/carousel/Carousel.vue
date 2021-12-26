@@ -1,6 +1,10 @@
 <template>
   <div class="fixed">
-    <v-carousel v-model="model" :height="$vuetify.breakpoint.xsOnly ? 250 : 450" class="elevation-10 rounded-lg">
+    <v-carousel
+      v-model="model"
+      :height="$vuetify.breakpoint.xsOnly ? 250 : 450"
+      class="elevation-10 rounded-lg"
+    >
       <v-carousel-item
         class="rounded"
         v-for="imagen in imagenes"
@@ -30,7 +34,7 @@ export default {
 </script>
 
 <style scoped>
-.fixed{
+.fixed {
   position: sticky;
   top: 10%;
 }

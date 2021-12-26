@@ -42,8 +42,12 @@ export default {
 .page-leave-active {
   opacity: 0;
 }
-
 .full-width {
   width: 100%;
+}
+@media (min-width: 1904px) {
+  .container {
+    max-width: 1385px;
+  }
 }
 </style>

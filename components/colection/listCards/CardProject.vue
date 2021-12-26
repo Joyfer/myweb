@@ -1,8 +1,8 @@
 <template>
   <v-hover v-slot="{ hover }">
     <v-card
+      class="card"
       elevation="4"
-      height="300"
       v-ripple
       nuxt
       :to="localePath(`/colection/${id}`)"
@@ -17,13 +17,23 @@
         <v-expand-transition>
           <div
             v-if="hover"
-            class="d-flex transition-fast-in-fast-out primary v-card--reveal text-h2 white--text"
+            class="
+              d-flex
+              transition-fast-in-fast-out
+              primary
+              v-card--reveal
+              text-h2
+              white--text
+            "
             style="height: 20%"
           >
             <v-card-title v-text="title"></v-card-title>
           </div>
         </v-expand-transition>
-        <v-card-title class="d-block d-sm-none bg-black" v-text="title"></v-card-title>
+        <v-card-title
+          class="d-block d-sm-none bg-black"
+          v-text="title"
+        ></v-card-title>
       </v-img>
     </v-card>
   </v-hover>
@@ -57,7 +67,10 @@ export default {
   position: absolute;
   width: 100%;
 }
-.bg-black{
+.bg-black {
   background-color: rgba(22, 22, 22, 0.623);
+}
+.card {
+  height: 40vh;
 }
 </style>
