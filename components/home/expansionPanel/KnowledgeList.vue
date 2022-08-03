@@ -17,6 +17,7 @@ export default {
       panel: [0, 1],
       mdiArrowDownBoldCircleOutline,
       list: [
+        "PHP",
         "Express",
         "Laravel",
         "RestAPI",
@@ -24,9 +25,7 @@ export default {
         "GIT",
         "GitHub",
         "MongoDB",
-        "FireBase",
         "MySQL",
-        "SQLite3",
         "PostgreSQL",
         "Bootstrap",
         "Vuetify",
@@ -34,7 +33,7 @@ export default {
         "HTML5",
         "SASS/SCSS",
         "CSS3",
-        "Responsive design"
+        "Responsive design",
       ],
     };
   },

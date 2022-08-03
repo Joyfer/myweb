@@ -34,7 +34,7 @@ export default {
         { name: "NodeJS", image: "https://i.imgur.com/R8UXpEt.png" },
         { name: "Vue", image: "https://i.imgur.com/aNttFmy.png" },
         { name: "React", image: "https://i.imgur.com/1KcCs5E.png" },
-        { name: "PHP", image: "https://i.imgur.com/nW7qj0z.png" },
+        { name: "Angular", image: "https://i.imgur.com/K23WfiX.png" },
       ],
     };
   },
