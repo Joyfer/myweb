@@ -17,9 +17,7 @@ export default {
       panel: [0, 1],
       mdiArrowDownBoldCircleOutline,
       list: [
-        "PHP",
         "Express",
-        "Laravel",
         "RestAPI",
         "JWT",
         "GIT",
