@@ -11,7 +11,7 @@
         class="blob-green"
       >
         <v-avatar size="40">
-          <v-img src="https://i.imgur.com/Wz370ut.jpg"></v-img>
+          <v-img src="https://i.imgur.com/j2LWU4L.jpg"></v-img>
         </v-avatar>
       </v-badge>
 

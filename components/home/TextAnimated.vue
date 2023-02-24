@@ -22,8 +22,6 @@ export default {
         "Programador web",
         "Fullstack",
         "Javascript - Typescript",
-        "PHP - Laravel",
-        "Vue and React lover",
       ],
     };
   },
