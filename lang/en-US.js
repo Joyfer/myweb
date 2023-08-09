@@ -19,7 +19,7 @@ export default {
   projectAlertHead: `The content shown below is developed by me using different libraries and frameworks.`,
   projectButtonVisitWeb: `Visit!`,
   projectButtonEmail: `Send me an email`,
-  projectAlertHeroku: `This app is deployed on Heroku, it will take a few seconds to start the first time.`,
+  projectAlertHeroku: `My apps on Heroku are temporarily inactive 😭.`,
   characteristics: "Characteristics",
   aboutText: `Built with Vue 2 and Nuxt, using the css framework Vuetify,
   free illustrations by <a href="https://undraw.co/" target="_blank">https://undraw.co/</a>

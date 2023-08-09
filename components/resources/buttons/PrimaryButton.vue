@@ -16,6 +16,7 @@
     :tile="outlined"
     exact
     :rel="href != undefined ? 'noopener' : ''"
+    :disabled="disabled"
   >
     {{ text }}
     <v-icon v-if="icon" right> {{ icon }} </v-icon>
@@ -65,6 +66,11 @@ export default {
       default: undefined
     },
     header: {
+      type: Boolean,
+      required: false,
+      default: false
+    },
+    disabled: {
       type: Boolean,
       required: false,
       default: false

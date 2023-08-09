@@ -20,8 +20,7 @@ export default {
   por mí utlizando diferentes librerías y frameworks.`,
   projectButtonVisitWeb: `¡Visitar!`,
   projectButtonEmail: `Envíame un correo`,
-  projectAlertHeroku: `Esta aplicación está subida a Heroku, lo que hará que tarde un 
-  poco en iniciar la primera vez.`,
+  projectAlertHeroku: `Mis apps en Heroku están temporalmente inactivas 😭.`,
   characteristics: "Caracteristicas",
   aboutText: `Construido en Vue 2 con Nuxt, utilizando el framework css Vuetify,
   ilustraciones provistas gratutitamente por
