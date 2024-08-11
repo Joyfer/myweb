@@ -28,6 +28,7 @@
               :text="$t('projectButtonVisitWeb')"
               icon="mdi-web"
               :header="true"
+              :disabled="filtrado[0].heroku"
             ></PrimaryButton>
             <PrimaryButton
               class="mx-1 mb-1 mb-lg-0"
@@ -46,7 +47,7 @@
               ><v-icon>mdi-github</v-icon></v-btn
             >
           </div>
-          <Alert v-if="filtrado[0].heroku" icon="mdi-clock-alert"
+          <Alert v-if="filtrado[0].heroku" icon="mdi-alert"
             ><template v-slot:body
               >{{$t('projectAlertHeroku')}}</template
             ></Alert
